@@ -31,6 +31,7 @@
     Private Sub App_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' LoadFormInPanel(New LoginPage(Me))
         View(New DemoPage(Me))
+
     End Sub
 #End Region
 End Class
