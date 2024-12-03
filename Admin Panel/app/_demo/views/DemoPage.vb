@@ -6,8 +6,6 @@
     Public Sub New(app As App)
         InitializeComponent()
         Render = app
-        Dim age = 4
-        Dim name = "Aldwin"
     End Sub
 
     Private Sub navBtn_Click(sender As Object, e As EventArgs) Handles navBtn.Click
