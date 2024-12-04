@@ -1,4 +1,4 @@
-﻿Public Class DemoPage
+﻿Public Class SecondPage
 
     Private Render As App
 
@@ -8,7 +8,7 @@
         Render = app
     End Sub
 
-    Private Sub navBtn_Click(sender As Object, e As EventArgs) Handles navBtn.Click
-        Render.View(New SecondPage(Render))
+    Private Sub backBtn_Click(sender As Object, e As EventArgs) Handles backBtn.Click
+        Render.View(New DemoPage(Render))
     End Sub
 End Class
