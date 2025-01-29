@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA3EB402-1B5E-4F67-997A-71BFE25754DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Admin_Panel.My.MyApplication</StartupObject>
+    <RootNamespace>Admin_Panel</RootNamespace>
+    <AssemblyName>Admin Panel</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Admin Panel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Admin Panel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App.Designer.vb">
+      <DependentUpon>App.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\login\views\Forgetpass.Designer.vb">
+      <DependentUpon>Forgetpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\login\views\Forgetpass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\login\views\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\login\views\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\login\views\verification.Designer.vb">
+      <DependentUpon>verification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\login\views\verification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\login\views\changepassword.Designer.vb">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\login\views\changepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\panel\dashboard\views\Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\panel\dashboard\views\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Viewresidents.Designer.vb">
+      <DependentUpon>Viewresidents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Viewresidents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\panel\users\views\ManageUsers.Designer.vb">
+      <DependentUpon>ManageUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\panel\users\views\ManageUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Adminregform.Designer.vb">
+      <DependentUpon>Adminregform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\panel\users\popups\Adminregform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="app\utilities\views\Utilities.Designer.vb">
+      <DependentUpon>Utilities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="app\utilities\views\Utilities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.resx">
+      <DependentUpon>App.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\login\views\Forgetpass.resx">
+      <DependentUpon>Forgetpass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\login\views\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\login\views\verification.resx">
+      <DependentUpon>verification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\login\views\changepassword.resx">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\panel\dashboard\views\Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\panel\users\popups\Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\panel\users\popups\Viewresidents.resx">
+      <DependentUpon>Viewresidents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\panel\users\views\ManageUsers.resx">
+      <DependentUpon>ManageUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\panel\users\popups\Adminregform.resx">
+      <DependentUpon>Adminregform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="app\utilities\views\Utilities.resx">
+      <DependentUpon>Utilities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="actions\" />
+    <Folder Include="app\login\hooks\" />
+    <Folder Include="app\panel\dashboard\hooks\" />
+    <Folder Include="app\panel\users\hooks\" />
+    <Folder Include="app\utilities\hook\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\4d6737591dbbf620316798b5bf815d33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\LoginBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\SystemLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\PARCELPOINT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\DashBoardIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\DashBoardIconHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\UsersIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\UsersIconHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\UtilitiesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\UtilitiesIconHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\PARCELPOINT LOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Label1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Label2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\logouticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\logouticonhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\serachicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\EyeOn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
