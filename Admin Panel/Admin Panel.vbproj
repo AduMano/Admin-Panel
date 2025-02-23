@@ -211,6 +211,8 @@
     </Compile>
     <Compile Include="Services\AuthService.vb" />
     <Compile Include="Services\DashboardService.vb" />
+    <Compile Include="Services\ManageUsersService.vb" />
+    <Compile Include="Services\UtilitiesService.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.resx">

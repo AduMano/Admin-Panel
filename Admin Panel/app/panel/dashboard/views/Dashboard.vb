@@ -6,6 +6,7 @@ Imports Guna.UI2.WinForms
 Public Class Dashboard
     Public Username As String
     Public userID As String
+    Private ManageUsersPage As New ManageUsers(Me)
 
     Public Sub New(username As String, userID As String)
         InitializeComponent()
@@ -119,11 +120,11 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles dashboardBtn.Click
-        With ManageUsers
+        With ManageUsersPage
             .TopLevel = False
             .Size = dashboardPnl.Size
             .Dock = DockStyle.Fill
-            dashboardPnl.Controls.Add(ManageUsers)
+            dashboardPnl.Controls.Add(ManageUsersPage)
             .BringToFront()
             .Hide()
         End With
@@ -153,11 +154,11 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles manageuserBtn.Click
-        With ManageUsers
+        With ManageUsersPage
             .TopLevel = False
             .Size = dashboardPnl.Size
             .Dock = DockStyle.Fill
-            dashboardPnl.Controls.Add(ManageUsers)
+            dashboardPnl.Controls.Add(ManageUsersPage)
             .BringToFront()
             .Show()
         End With
