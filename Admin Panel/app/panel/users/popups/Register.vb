@@ -8,32 +8,13 @@
         Me.Close()
     End Sub
 
-    Private Sub Guna2TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2TabControl1.SelectedIndexChanged
-
-    End Sub
-
     Private Sub Guna2Button3_Click_1(sender As Object, e As EventArgs) Handles backBtn.Click
 
         Guna2TabControl1.SelectedTab = TabPage1
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
-
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
-
-    End Sub
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles registerBtn.Click
-
-    End Sub
-
-    Private Sub TxtboxPass_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub nextBtn_Click(sender As Object, e As EventArgs) Handles nextBtn.Click
+        OverlayHelper.ShowOverlay(Me)
 
         Dim fname As String = fnameTxtbox.Text.Trim()
         Dim mname As String = mnameTxtbox.Text.Trim()
@@ -101,10 +82,9 @@
         End If
 
         ' If everything is valid, proceed to the next tab
-        changepassword.Visible = True ' Make the change password panel visible
-        verification.Visible = False ' Optionally hide the current panel if necessary
-
-
+        OverlayHelper.HideOverlay()
+        'changepassword.Visible = True ' Make the change password panel visible
+        'verification.Visible = False ' Optionally hide the current panel if necessary
     End Sub
 
     Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint

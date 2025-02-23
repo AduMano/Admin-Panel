@@ -140,8 +140,8 @@ Partial Class Utilities
         Me.fourth.Controls.Add(Me.Guna2TextBox4)
         Me.fourth.Location = New System.Drawing.Point(4, 72)
         Me.fourth.Name = "fourth"
-        Me.fourth.Padding = New System.Windows.Forms.Padding(3)
-        Me.fourth.Size = New System.Drawing.Size(1011, 729)
+        Me.fourth.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.fourth.Size = New System.Drawing.Size(1011, 616)
         Me.fourth.TabIndex = 4
         Me.fourth.Text = "Configuration"
         Me.fourth.UseVisualStyleBackColor = True
@@ -167,7 +167,7 @@ Partial Class Utilities
         Me.Guna2Panel1.Controls.Add(Me.ManualRadioButton1)
         Me.Guna2Panel1.Location = New System.Drawing.Point(29, 18)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(963, 282)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(963, 246)
         Me.Guna2Panel1.TabIndex = 31
         '
         'removeBtn
@@ -221,7 +221,7 @@ Partial Class Utilities
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(250, 172)
+        Me.Label3.Location = New System.Drawing.Point(250, 147)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(131, 20)
         Me.Label3.TabIndex = 11
@@ -230,7 +230,7 @@ Partial Class Utilities
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 172)
+        Me.Label2.Location = New System.Drawing.Point(34, 147)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(131, 20)
         Me.Label2.TabIndex = 10
@@ -276,7 +276,7 @@ Partial Class Utilities
         Me.StatusComboBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.StatusComboBox.ItemHeight = 30
         Me.StatusComboBox.Items.AddRange(New Object() {"Active", "Inactive"})
-        Me.StatusComboBox.Location = New System.Drawing.Point(253, 195)
+        Me.StatusComboBox.Location = New System.Drawing.Point(253, 170)
         Me.StatusComboBox.Name = "StatusComboBox"
         Me.StatusComboBox.Size = New System.Drawing.Size(194, 36)
         Me.StatusComboBox.StartIndex = 1
@@ -295,7 +295,7 @@ Partial Class Utilities
         Me.sizeComboBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.sizeComboBox.ItemHeight = 30
         Me.sizeComboBox.Items.AddRange(New Object() {"Small", "Medium", "Large"})
-        Me.sizeComboBox.Location = New System.Drawing.Point(37, 195)
+        Me.sizeComboBox.Location = New System.Drawing.Point(37, 170)
         Me.sizeComboBox.Name = "sizeComboBox"
         Me.sizeComboBox.Size = New System.Drawing.Size(194, 36)
         Me.sizeComboBox.StartIndex = 1
@@ -315,6 +315,7 @@ Partial Class Utilities
         Me.Guna2TextBox7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox7.Location = New System.Drawing.Point(467, 94)
+        Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox7.Name = "Guna2TextBox7"
         Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox7.PlaceholderText = ""
@@ -336,6 +337,7 @@ Partial Class Utilities
         Me.Guna2TextBox6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox6.Location = New System.Drawing.Point(253, 94)
+        Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox6.Name = "Guna2TextBox6"
         Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox6.PlaceholderText = ""
@@ -357,6 +359,7 @@ Partial Class Utilities
         Me.Guna2TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox5.Location = New System.Drawing.Point(37, 94)
+        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox5.Name = "Guna2TextBox5"
         Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox5.PlaceholderText = ""
@@ -429,7 +432,7 @@ Partial Class Utilities
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Guna2DataGridView4.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView4.GridColor = System.Drawing.Color.White
-        Me.Guna2DataGridView4.Location = New System.Drawing.Point(29, 384)
+        Me.Guna2DataGridView4.Location = New System.Drawing.Point(28, 330)
         Me.Guna2DataGridView4.Name = "Guna2DataGridView4"
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
@@ -440,7 +443,8 @@ Partial Class Utilities
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView4.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView4.RowHeadersVisible = False
-        Me.Guna2DataGridView4.Size = New System.Drawing.Size(963, 299)
+        Me.Guna2DataGridView4.RowHeadersWidth = 51
+        Me.Guna2DataGridView4.Size = New System.Drawing.Size(963, 266)
         Me.Guna2DataGridView4.TabIndex = 30
         Me.Guna2DataGridView4.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView4.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -469,6 +473,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn12.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn12.FillWeight = 50.0!
         Me.DataGridViewTextBoxColumn12.HeaderText = ""
+        Me.DataGridViewTextBoxColumn12.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.ReadOnly = True
         '
@@ -477,6 +482,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn26.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn26.FillWeight = 60.0!
         Me.DataGridViewTextBoxColumn26.HeaderText = "Action"
+        Me.DataGridViewTextBoxColumn26.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
         Me.DataGridViewTextBoxColumn26.ReadOnly = True
         '
@@ -485,6 +491,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn27.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn27.FillWeight = 90.0!
         Me.DataGridViewTextBoxColumn27.HeaderText = "Date-Time"
+        Me.DataGridViewTextBoxColumn27.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
         Me.DataGridViewTextBoxColumn27.ReadOnly = True
         '
@@ -492,30 +499,35 @@ Partial Class Utilities
         '
         Me.DataGridViewTextBoxColumn13.FillWeight = 90.0!
         Me.DataGridViewTextBoxColumn13.HeaderText = "Parcel ID"
+        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         '
         'DataGridViewTextBoxColumn22
         '
         Me.DataGridViewTextBoxColumn22.FillWeight = 120.0!
         Me.DataGridViewTextBoxColumn22.HeaderText = "Parcel Name"
+        Me.DataGridViewTextBoxColumn22.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
         '
         'DataGridViewTextBoxColumn23
         '
         Me.DataGridViewTextBoxColumn23.FillWeight = 90.0!
         Me.DataGridViewTextBoxColumn23.HeaderText = "Recipient"
+        Me.DataGridViewTextBoxColumn23.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
         '
         'DataGridViewTextBoxColumn24
         '
         Me.DataGridViewTextBoxColumn24.FillWeight = 130.0!
         Me.DataGridViewTextBoxColumn24.HeaderText = "Locker Number"
+        Me.DataGridViewTextBoxColumn24.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
         '
         'DataGridViewTextBoxColumn25
         '
         Me.DataGridViewTextBoxColumn25.FillWeight = 60.0!
         Me.DataGridViewTextBoxColumn25.HeaderText = "Status"
+        Me.DataGridViewTextBoxColumn25.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
         '
         'clearBtn4
@@ -528,7 +540,7 @@ Partial Class Utilities
         Me.clearBtn4.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
         Me.clearBtn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clearBtn4.ForeColor = System.Drawing.Color.Black
-        Me.clearBtn4.Location = New System.Drawing.Point(810, 328)
+        Me.clearBtn4.Location = New System.Drawing.Point(809, 280)
         Me.clearBtn4.Name = "clearBtn4"
         Me.clearBtn4.Size = New System.Drawing.Size(182, 34)
         Me.clearBtn4.TabIndex = 27
@@ -560,7 +572,7 @@ Partial Class Utilities
         Me.searchBtn4.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.searchBtn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchBtn4.ForeColor = System.Drawing.Color.Black
-        Me.searchBtn4.Location = New System.Drawing.Point(607, 328)
+        Me.searchBtn4.Location = New System.Drawing.Point(606, 280)
         Me.searchBtn4.Name = "searchBtn4"
         Me.searchBtn4.Size = New System.Drawing.Size(182, 34)
         Me.searchBtn4.TabIndex = 26
@@ -582,7 +594,8 @@ Partial Class Utilities
         Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox4.IconLeft = Global.Admin_Panel.My.Resources.Resources.serachicon
         Me.Guna2TextBox4.IconLeftOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(29, 328)
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(28, 280)
+        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox4.Name = "Guna2TextBox4"
         Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
@@ -602,8 +615,8 @@ Partial Class Utilities
         Me.third.Controls.Add(Me.Guna2TextBox3)
         Me.third.Location = New System.Drawing.Point(4, 72)
         Me.third.Name = "third"
-        Me.third.Padding = New System.Windows.Forms.Padding(3)
-        Me.third.Size = New System.Drawing.Size(1011, 729)
+        Me.third.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.third.Size = New System.Drawing.Size(1011, 616)
         Me.third.TabIndex = 3
         Me.third.Text = "User Logs"
         Me.third.UseVisualStyleBackColor = True
@@ -614,7 +627,7 @@ Partial Class Utilities
         Me.Guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Guna2DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(429, 675)
+        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(428, 562)
         Me.Guna2DateTimePicker2.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.Name = "Guna2DateTimePicker2"
@@ -660,7 +673,8 @@ Partial Class Utilities
         DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(963, 574)
+        Me.Guna2DataGridView1.RowHeadersWidth = 51
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(963, 461)
         Me.Guna2DataGridView1.TabIndex = 30
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -689,6 +703,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn7.FillWeight = 70.0!
         Me.DataGridViewTextBoxColumn7.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
@@ -696,6 +711,7 @@ Partial Class Utilities
         '
         Me.LengthDataGridViewTextBoxColumn.DataPropertyName = "Length"
         Me.LengthDataGridViewTextBoxColumn.HeaderText = "Length"
+        Me.LengthDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.LengthDataGridViewTextBoxColumn.Name = "LengthDataGridViewTextBoxColumn"
         Me.LengthDataGridViewTextBoxColumn.ReadOnly = True
         '
@@ -703,23 +719,27 @@ Partial Class Utilities
         '
         Me.DataGridViewTextBoxColumn8.FillWeight = 70.0!
         Me.DataGridViewTextBoxColumn8.HeaderText = "Role"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.FillWeight = 70.0!
         Me.DataGridViewTextBoxColumn9.HeaderText = "Action"
+        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
         'DataGridViewTextBoxColumn10
         '
         Me.DataGridViewTextBoxColumn10.FillWeight = 130.0!
         Me.DataGridViewTextBoxColumn10.HeaderText = "Action Description"
+        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
         'DataGridViewTextBoxColumn11
         '
         Me.DataGridViewTextBoxColumn11.HeaderText = "Date-Time"
+        Me.DataGridViewTextBoxColumn11.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
         'Guna2Button10
@@ -732,7 +752,7 @@ Partial Class Utilities
         Me.Guna2Button10.FillColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.Guna2Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button10.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button10.Location = New System.Drawing.Point(617, 675)
+        Me.Guna2Button10.Location = New System.Drawing.Point(616, 562)
         Me.Guna2Button10.Name = "Guna2Button10"
         Me.Guna2Button10.Size = New System.Drawing.Size(182, 34)
         Me.Guna2Button10.TabIndex = 29
@@ -780,7 +800,7 @@ Partial Class Utilities
         Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button2.Location = New System.Drawing.Point(805, 675)
+        Me.Guna2Button2.Location = New System.Drawing.Point(804, 562)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(182, 34)
         Me.Guna2Button2.TabIndex = 28
@@ -803,6 +823,7 @@ Partial Class Utilities
         Me.Guna2TextBox3.IconLeft = Global.Admin_Panel.My.Resources.Resources.serachicon
         Me.Guna2TextBox3.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.Guna2TextBox3.Location = New System.Drawing.Point(24, 18)
+        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox3.Name = "Guna2TextBox3"
         Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
@@ -824,9 +845,9 @@ Partial Class Utilities
         Me.second.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.second.Location = New System.Drawing.Point(4, 72)
         Me.second.Name = "second"
-        Me.second.Padding = New System.Windows.Forms.Padding(3)
+        Me.second.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.second.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.second.Size = New System.Drawing.Size(1011, 729)
+        Me.second.Size = New System.Drawing.Size(1011, 616)
         Me.second.TabIndex = 1
         Me.second.Text = "Parcel Logs"
         '
@@ -836,7 +857,7 @@ Partial Class Utilities
         Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(429, 675)
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(429, 562)
         Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
@@ -882,7 +903,8 @@ Partial Class Utilities
         DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.Guna2DataGridView2.RowHeadersVisible = False
-        Me.Guna2DataGridView2.Size = New System.Drawing.Size(963, 574)
+        Me.Guna2DataGridView2.RowHeadersWidth = 51
+        Me.Guna2DataGridView2.Size = New System.Drawing.Size(963, 461)
         Me.Guna2DataGridView2.TabIndex = 23
         Me.Guna2DataGridView2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark
         Me.Guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(52, Byte), Integer))
@@ -912,6 +934,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn1.FillWeight = 50.0!
         Me.DataGridViewTextBoxColumn1.HeaderText = ""
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
@@ -920,6 +943,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn21.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn21.FillWeight = 60.0!
         Me.DataGridViewTextBoxColumn21.HeaderText = "Action"
+        Me.DataGridViewTextBoxColumn21.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
         Me.DataGridViewTextBoxColumn21.ReadOnly = True
         '
@@ -928,6 +952,7 @@ Partial Class Utilities
         Me.Column1.DataPropertyName = "Length"
         Me.Column1.FillWeight = 90.0!
         Me.Column1.HeaderText = "Date-Time"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
         '
@@ -935,30 +960,35 @@ Partial Class Utilities
         '
         Me.DataGridViewTextBoxColumn2.FillWeight = 90.0!
         Me.DataGridViewTextBoxColumn2.HeaderText = "Parcel ID"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.FillWeight = 120.0!
         Me.DataGridViewTextBoxColumn3.HeaderText = "Parcel Name"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.FillWeight = 90.0!
         Me.DataGridViewTextBoxColumn4.HeaderText = "Recipient"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.FillWeight = 130.0!
         Me.DataGridViewTextBoxColumn5.HeaderText = "Locker Number"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.FillWeight = 60.0!
         Me.DataGridViewTextBoxColumn6.HeaderText = "Status"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'clearBtn2
@@ -987,7 +1017,7 @@ Partial Class Utilities
         Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button4.Location = New System.Drawing.Point(805, 675)
+        Me.Guna2Button4.Location = New System.Drawing.Point(805, 562)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.Size = New System.Drawing.Size(182, 34)
         Me.Guna2Button4.TabIndex = 20
@@ -1019,7 +1049,7 @@ Partial Class Utilities
         Me.Guna2Button8.FillColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button8.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button8.Location = New System.Drawing.Point(617, 675)
+        Me.Guna2Button8.Location = New System.Drawing.Point(617, 561)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.Size = New System.Drawing.Size(182, 34)
         Me.Guna2Button8.TabIndex = 21
@@ -1042,6 +1072,7 @@ Partial Class Utilities
         Me.Guna2TextBox1.IconLeft = Global.Admin_Panel.My.Resources.Resources.serachicon
         Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.Guna2TextBox1.Location = New System.Drawing.Point(24, 18)
+        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
@@ -1065,9 +1096,9 @@ Partial Class Utilities
         Me.first.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.first.Location = New System.Drawing.Point(4, 72)
         Me.first.Name = "first"
-        Me.first.Padding = New System.Windows.Forms.Padding(3)
+        Me.first.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
         Me.first.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.first.Size = New System.Drawing.Size(1011, 729)
+        Me.first.Size = New System.Drawing.Size(1011, 616)
         Me.first.TabIndex = 2
         Me.first.Text = "Locker Status and Control"
         '
@@ -1081,7 +1112,7 @@ Partial Class Utilities
         Me.lockBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.lockBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lockBtn.ForeColor = System.Drawing.Color.White
-        Me.lockBtn.Location = New System.Drawing.Point(241, 675)
+        Me.lockBtn.Location = New System.Drawing.Point(241, 562)
         Me.lockBtn.Name = "lockBtn"
         Me.lockBtn.Size = New System.Drawing.Size(182, 34)
         Me.lockBtn.TabIndex = 16
@@ -1097,7 +1128,7 @@ Partial Class Utilities
         Me.unlockBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.unlockBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.unlockBtn.ForeColor = System.Drawing.Color.Black
-        Me.unlockBtn.Location = New System.Drawing.Point(429, 675)
+        Me.unlockBtn.Location = New System.Drawing.Point(429, 562)
         Me.unlockBtn.Name = "unlockBtn"
         Me.unlockBtn.Size = New System.Drawing.Size(182, 34)
         Me.unlockBtn.TabIndex = 15
@@ -1142,7 +1173,8 @@ Partial Class Utilities
         DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView3.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.Guna2DataGridView3.RowHeadersVisible = False
-        Me.Guna2DataGridView3.Size = New System.Drawing.Size(963, 574)
+        Me.Guna2DataGridView3.RowHeadersWidth = 51
+        Me.Guna2DataGridView3.Size = New System.Drawing.Size(963, 461)
         Me.Guna2DataGridView3.TabIndex = 14
         Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -1171,6 +1203,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn14.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn14.FillWeight = 50.0!
         Me.DataGridViewTextBoxColumn14.HeaderText = ""
+        Me.DataGridViewTextBoxColumn14.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         Me.DataGridViewTextBoxColumn14.ReadOnly = True
         '
@@ -1179,6 +1212,7 @@ Partial Class Utilities
         Me.DataGridViewTextBoxColumn20.DataPropertyName = "Length"
         Me.DataGridViewTextBoxColumn20.FillWeight = 140.0!
         Me.DataGridViewTextBoxColumn20.HeaderText = "Date-Time Retrieved"
+        Me.DataGridViewTextBoxColumn20.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
         Me.DataGridViewTextBoxColumn20.ReadOnly = True
         '
@@ -1186,30 +1220,35 @@ Partial Class Utilities
         '
         Me.DataGridViewTextBoxColumn15.FillWeight = 80.0!
         Me.DataGridViewTextBoxColumn15.HeaderText = "Locker No."
+        Me.DataGridViewTextBoxColumn15.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
         '
         'DataGridViewTextBoxColumn16
         '
         Me.DataGridViewTextBoxColumn16.FillWeight = 50.0!
         Me.DataGridViewTextBoxColumn16.HeaderText = "Size"
+        Me.DataGridViewTextBoxColumn16.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         '
         'DataGridViewTextBoxColumn17
         '
         Me.DataGridViewTextBoxColumn17.FillWeight = 50.0!
         Me.DataGridViewTextBoxColumn17.HeaderText = "Status"
+        Me.DataGridViewTextBoxColumn17.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         '
         'DataGridViewTextBoxColumn18
         '
         Me.DataGridViewTextBoxColumn18.FillWeight = 70.0!
         Me.DataGridViewTextBoxColumn18.HeaderText = "Recipient"
+        Me.DataGridViewTextBoxColumn18.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         '
         'DataGridViewTextBoxColumn19
         '
         Me.DataGridViewTextBoxColumn19.FillWeight = 140.0!
         Me.DataGridViewTextBoxColumn19.HeaderText = "Date-Time Delivered"
+        Me.DataGridViewTextBoxColumn19.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         '
         'Guna2ComboBox1
@@ -1226,7 +1265,7 @@ Partial Class Utilities
         Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.Black
         Me.Guna2ComboBox1.ItemHeight = 30
         Me.Guna2ComboBox1.Items.AddRange(New Object() {"FIlter By"})
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(24, 673)
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(53, 560)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.Size = New System.Drawing.Size(182, 36)
         Me.Guna2ComboBox1.StartIndex = 0
@@ -1259,7 +1298,7 @@ Partial Class Utilities
         Me.refreshBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.refreshBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.refreshBtn.ForeColor = System.Drawing.Color.Black
-        Me.refreshBtn.Location = New System.Drawing.Point(805, 675)
+        Me.refreshBtn.Location = New System.Drawing.Point(805, 562)
         Me.refreshBtn.Name = "refreshBtn"
         Me.refreshBtn.Size = New System.Drawing.Size(182, 34)
         Me.refreshBtn.TabIndex = 8
@@ -1291,7 +1330,7 @@ Partial Class Utilities
         Me.downloadBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.downloadBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.downloadBtn.ForeColor = System.Drawing.Color.Black
-        Me.downloadBtn.Location = New System.Drawing.Point(617, 675)
+        Me.downloadBtn.Location = New System.Drawing.Point(617, 562)
         Me.downloadBtn.Name = "downloadBtn"
         Me.downloadBtn.Size = New System.Drawing.Size(182, 34)
         Me.downloadBtn.TabIndex = 8
@@ -1314,6 +1353,7 @@ Partial Class Utilities
         Me.Guna2TextBox2.IconLeft = Global.Admin_Panel.My.Resources.Resources.serachicon
         Me.Guna2TextBox2.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.Guna2TextBox2.Location = New System.Drawing.Point(24, 18)
+        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
@@ -1333,7 +1373,7 @@ Partial Class Utilities
         Me.Guna2TabControl1.Location = New System.Drawing.Point(55, 98)
         Me.Guna2TabControl1.Name = "Guna2TabControl1"
         Me.Guna2TabControl1.SelectedIndex = 0
-        Me.Guna2TabControl1.Size = New System.Drawing.Size(1019, 805)
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(1019, 692)
         Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Arial Narrow", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1371,7 +1411,7 @@ Partial Class Utilities
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1129, 1000)
+        Me.ClientSize = New System.Drawing.Size(1429, 792)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Guna2TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

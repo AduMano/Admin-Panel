@@ -3,7 +3,7 @@ Imports Guna.UI2.WinForms
 
 Public Class Forgetpass
 
-    Private Sub nextBtn_Click(sender As Object, e As EventArgs) Handles nextBtn.Click
+    Private Async Sub nextBtn_Click(sender As Object, e As EventArgs) Handles nextBtn.Click
         Dim emailPattern As String = "^[a-zA-Z0-9._%+-]+@gmail\.com$"
 
         ' Check if the email field is empty
@@ -13,25 +13,44 @@ Public Class Forgetpass
             ' If email format is invalid, show error
             ShowDialog("Validation Error", "Invalid email format. Please enter a valid email address.", MessageDialogIcon.Warning)
         Else
-            ' If email is valid, show success message and open the next form
-            Dim successDialog As New Guna2MessageDialog With {
-                .Parent = Me,
-                .Style = MessageDialogStyle.Light,
-                .Icon = MessageDialogIcon.Information,
-                .Buttons = MessageDialogButtons.OK,
-                .Caption = "Success",
-                .Text = "Proceeding to the next step!"
-            }
+            ' Create a new instance of the verification form
+            OverlayHelper.ShowOverlay(Me)
 
-            ' Show dialog and proceed to the next form after user clicks OK
-            If successDialog.Show() = DialogResult.OK Then
-                With verification
-                    .TopLevel = False  ' Ensure it's not a top-level form
-                    forgetPnl.Controls.Add(verification)  ' Add the form to the panel (forgetPnl)
-                    .BringToFront()  ' Ensure it appears in front of the other controls inside the panel
-                    .Show()
+            ' Check Email if existing
+            Dim emailExists As Boolean = Await AuthService.VerifyEmailExists(TxtboxEmail.Text, "admin")
+            If Not emailExists Then
+                OverlayHelper.HideOverlay()
+                ShowDialog("Invalid E-mail", "Invalid email. Please enter a valid email address.", MessageDialogIcon.Warning)
+                Exit Sub
+            Else
+                ' Send Verificaiton Code
+                Dim verificationCode As String = Await AuthService.RequestVerificationCode(TxtboxEmail.Text.Trim())
 
-                End With
+                If Not String.IsNullOrEmpty(verificationCode) Then
+                    OverlayHelper.HideOverlay()
+                End If
+
+                ' If email is valid, show success message and open the next form
+                Dim successDialog As New Guna2MessageDialog With {
+                    .Parent = Me,
+                    .Style = MessageDialogStyle.Dark,
+                    .Icon = MessageDialogIcon.Information,
+                    .Buttons = MessageDialogButtons.OK,
+                    .Caption = "E-mail valid!",
+                    .Text = "Click ok to proceed"
+                }
+
+                ' Show dialog and proceed to the next form after user clicks OK
+                If successDialog.Show() = DialogResult.OK Then
+                    Dim verificationForm As New verification(TxtboxEmail.Text, Me)
+
+                    With verificationForm
+                        .TopLevel = False  ' Ensure it's not a top-level form
+                        forgetPnl.Controls.Add(verificationForm)  ' Add the form to the panel (forgetPnl)
+                        .BringToFront()  ' Ensure it appears in front of the other controls inside the panel
+                        .Show()
+                    End With
+                End If
             End If
         End If
     End Sub
@@ -57,26 +76,8 @@ Public Class Forgetpass
         loginForm.Show()
     End Sub
 
-    Private Sub Guna2TextBox7_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub forgetPnl_Paint(sender As Object, e As PaintEventArgs) Handles forgetPnl.Paint
-
-    End Sub
-
-    Private Sub TxtboxEmail_TextChanged(sender As Object, e As EventArgs) Handles TxtboxEmail.TextChanged
-
-    End Sub
-
     Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
         Login.Show()
         Me.Close()
-
-
-    End Sub
-
-    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs)
-
     End Sub
 End Class

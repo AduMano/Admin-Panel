@@ -37,55 +37,61 @@ Partial Class Dashboard
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.dashboardPnl = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CircleProgressBar4 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CircleProgressBar3 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CircleProgressBar2 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CircleProgressBar1 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.dailyCount = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2VScrollBar1 = New Guna.UI2.WinForms.Guna2VScrollBar()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.NotificationPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.NotifPanel = New System.Windows.Forms.Panel()
+        Me.ParcelLogsTbl = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.weeklyCount = New System.Windows.Forms.Label()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.monthlyCount = New System.Windows.Forms.Label()
+        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.anuallyCount = New System.Windows.Forms.Label()
+        Me.refreshBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.parcelpointPnl.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.dashboardPnl.SuspendLayout()
-        Me.Guna2Panel8.SuspendLayout()
-        Me.Guna2CircleProgressBar4.SuspendLayout()
-        Me.Guna2Panel7.SuspendLayout()
-        Me.Guna2CircleProgressBar3.SuspendLayout()
-        Me.Guna2Panel6.SuspendLayout()
-        Me.Guna2CircleProgressBar2.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
-        Me.Guna2CircleProgressBar1.SuspendLayout()
+        Me.NotificationPanel.SuspendLayout()
+        CType(Me.ParcelLogsTbl, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel6.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel7.SuspendLayout()
+        Me.Guna2Panel8.SuspendLayout()
+        Me.Guna2Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'parcelpointPnl
@@ -98,8 +104,9 @@ Partial Class Dashboard
         Me.parcelpointPnl.Controls.Add(Me.Guna2Panel3)
         Me.parcelpointPnl.Dock = System.Windows.Forms.DockStyle.Left
         Me.parcelpointPnl.Location = New System.Drawing.Point(0, 0)
+        Me.parcelpointPnl.Margin = New System.Windows.Forms.Padding(4)
         Me.parcelpointPnl.Name = "parcelpointPnl"
-        Me.parcelpointPnl.Size = New System.Drawing.Size(293, 1024)
+        Me.parcelpointPnl.Size = New System.Drawing.Size(391, 975)
         Me.parcelpointPnl.TabIndex = 0
         '
         'logoutBtn
@@ -118,9 +125,10 @@ Partial Class Dashboard
         Me.logoutBtn.Image = Global.Admin_Panel.My.Resources.Resources.logouticon
         Me.logoutBtn.ImageOffset = New System.Drawing.Point(-12, 0)
         Me.logoutBtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.logoutBtn.Location = New System.Drawing.Point(0, 950)
+        Me.logoutBtn.Location = New System.Drawing.Point(0, 884)
+        Me.logoutBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.logoutBtn.Name = "logoutBtn"
-        Me.logoutBtn.Size = New System.Drawing.Size(293, 74)
+        Me.logoutBtn.Size = New System.Drawing.Size(391, 91)
         Me.logoutBtn.TabIndex = 5
         Me.logoutBtn.Text = "Log Out"
         Me.logoutBtn.TextOffset = New System.Drawing.Point(-6, 0)
@@ -141,9 +149,10 @@ Partial Class Dashboard
         Me.utilitiesBtn.Image = Global.Admin_Panel.My.Resources.Resources.UtilitiesIcon
         Me.utilitiesBtn.ImageOffset = New System.Drawing.Point(-20, 0)
         Me.utilitiesBtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.utilitiesBtn.Location = New System.Drawing.Point(0, 334)
+        Me.utilitiesBtn.Location = New System.Drawing.Point(0, 411)
+        Me.utilitiesBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.utilitiesBtn.Name = "utilitiesBtn"
-        Me.utilitiesBtn.Size = New System.Drawing.Size(293, 74)
+        Me.utilitiesBtn.Size = New System.Drawing.Size(391, 91)
         Me.utilitiesBtn.TabIndex = 4
         Me.utilitiesBtn.Text = "Utilities"
         Me.utilitiesBtn.TextOffset = New System.Drawing.Point(-15, 0)
@@ -164,9 +173,10 @@ Partial Class Dashboard
         Me.manageuserBtn.Image = Global.Admin_Panel.My.Resources.Resources.UsersIcon
         Me.manageuserBtn.ImageOffset = New System.Drawing.Point(-6, 0)
         Me.manageuserBtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.manageuserBtn.Location = New System.Drawing.Point(0, 260)
+        Me.manageuserBtn.Location = New System.Drawing.Point(0, 320)
+        Me.manageuserBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.manageuserBtn.Name = "manageuserBtn"
-        Me.manageuserBtn.Size = New System.Drawing.Size(293, 74)
+        Me.manageuserBtn.Size = New System.Drawing.Size(391, 91)
         Me.manageuserBtn.TabIndex = 3
         Me.manageuserBtn.Text = "Manage User"
         '
@@ -186,9 +196,10 @@ Partial Class Dashboard
         Me.dashboardBtn.Image = Global.Admin_Panel.My.Resources.Resources.DashBoardIcon
         Me.dashboardBtn.ImageOffset = New System.Drawing.Point(-12, 0)
         Me.dashboardBtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.dashboardBtn.Location = New System.Drawing.Point(0, 186)
+        Me.dashboardBtn.Location = New System.Drawing.Point(0, 229)
+        Me.dashboardBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.dashboardBtn.Name = "dashboardBtn"
-        Me.dashboardBtn.Size = New System.Drawing.Size(293, 74)
+        Me.dashboardBtn.Size = New System.Drawing.Size(391, 91)
         Me.dashboardBtn.TabIndex = 2
         Me.dashboardBtn.Text = "Dashboard"
         Me.dashboardBtn.TextOffset = New System.Drawing.Point(-6, 0)
@@ -199,17 +210,19 @@ Partial Class Dashboard
         Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox1)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(293, 186)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(391, 229)
         Me.Guna2Panel3.TabIndex = 0
         '
         'Guna2PictureBox2
         '
         Me.Guna2PictureBox2.Image = Global.Admin_Panel.My.Resources.Resources.PARCELPOINT
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(100, 81)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(133, 100)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(151, 15)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(201, 18)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 1
         Me.Guna2PictureBox2.TabStop = False
@@ -219,9 +232,10 @@ Partial Class Dashboard
         Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(31, 49)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(41, 60)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(75, 78)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(100, 96)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
@@ -229,306 +243,79 @@ Partial Class Dashboard
         '
         'dashboardPnl
         '
+        Me.dashboardPnl.Controls.Add(Me.refreshBtn)
         Me.dashboardPnl.Controls.Add(Me.Guna2Panel8)
-        Me.dashboardPnl.Controls.Add(Me.Guna2Panel7)
-        Me.dashboardPnl.Controls.Add(Me.Guna2Panel6)
+        Me.dashboardPnl.Controls.Add(Me.Guna2Panel4)
+        Me.dashboardPnl.Controls.Add(Me.Guna2Panel1)
+        Me.dashboardPnl.Controls.Add(Me.Label7)
         Me.dashboardPnl.Controls.Add(Me.Guna2Panel5)
         Me.dashboardPnl.Controls.Add(Me.Label4)
         Me.dashboardPnl.Controls.Add(Me.Label3)
         Me.dashboardPnl.Controls.Add(Me.LinkLabel1)
         Me.dashboardPnl.Controls.Add(Me.Label2)
         Me.dashboardPnl.Controls.Add(Me.Label1)
-        Me.dashboardPnl.Controls.Add(Me.Guna2Panel4)
-        Me.dashboardPnl.Controls.Add(Me.Guna2DataGridView1)
+        Me.dashboardPnl.Controls.Add(Me.NotificationPanel)
+        Me.dashboardPnl.Controls.Add(Me.ParcelLogsTbl)
         Me.dashboardPnl.FillColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
-        Me.dashboardPnl.Location = New System.Drawing.Point(299, 12)
+        Me.dashboardPnl.Location = New System.Drawing.Point(399, 15)
+        Me.dashboardPnl.Margin = New System.Windows.Forms.Padding(4)
         Me.dashboardPnl.Name = "dashboardPnl"
-        Me.dashboardPnl.Size = New System.Drawing.Size(1129, 1000)
+        Me.dashboardPnl.Size = New System.Drawing.Size(1505, 1231)
         Me.dashboardPnl.TabIndex = 1
         '
-        'Guna2Panel8
+        'Label7
         '
-        Me.Guna2Panel8.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel8.BorderColor = System.Drawing.Color.White
-        Me.Guna2Panel8.BorderRadius = 15
-        Me.Guna2Panel8.Controls.Add(Me.Guna2CircleProgressBar4)
-        Me.Guna2Panel8.Controls.Add(Me.Label15)
-        Me.Guna2Panel8.Controls.Add(Me.Label16)
-        Me.Guna2Panel8.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Guna2Panel8.Location = New System.Drawing.Point(312, 140)
-        Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(230, 169)
-        Me.Guna2Panel8.TabIndex = 10
-        '
-        'Guna2CircleProgressBar4
-        '
-        Me.Guna2CircleProgressBar4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleProgressBar4.Controls.Add(Me.Label14)
-        Me.Guna2CircleProgressBar4.FillColor = System.Drawing.Color.FromArgb(CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.Guna2CircleProgressBar4.FillThickness = 15
-        Me.Guna2CircleProgressBar4.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Guna2CircleProgressBar4.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar4.Location = New System.Drawing.Point(129, 19)
-        Me.Guna2CircleProgressBar4.Minimum = 0
-        Me.Guna2CircleProgressBar4.Name = "Guna2CircleProgressBar4"
-        Me.Guna2CircleProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar4.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar4.ProgressThickness = 15
-        Me.Guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar4.Size = New System.Drawing.Size(85, 85)
-        Me.Guna2CircleProgressBar4.TabIndex = 9
-        Me.Guna2CircleProgressBar4.Text = "Guna2CircleProgressBar4"
-        Me.Guna2CircleProgressBar4.UseTransparentBackground = True
-        Me.Guna2CircleProgressBar4.Value = 20
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(23, 32)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(41, 20)
-        Me.Label14.TabIndex = 10
-        Me.Label14.Text = "20%"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(12, 116)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(132, 20)
-        Me.Label15.TabIndex = 8
-        Me.Label15.Text = "Weekly Deliveries"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(3, 28)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(108, 76)
-        Me.Label16.TabIndex = 8
-        Me.Label16.Text = "10"
-        '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel7.BorderColor = System.Drawing.Color.White
-        Me.Guna2Panel7.BorderRadius = 15
-        Me.Guna2Panel7.Controls.Add(Me.Guna2CircleProgressBar3)
-        Me.Guna2Panel7.Controls.Add(Me.Label12)
-        Me.Guna2Panel7.Controls.Add(Me.Label13)
-        Me.Guna2Panel7.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Guna2Panel7.Location = New System.Drawing.Point(589, 140)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(230, 169)
-        Me.Guna2Panel7.TabIndex = 10
-        '
-        'Guna2CircleProgressBar3
-        '
-        Me.Guna2CircleProgressBar3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleProgressBar3.Controls.Add(Me.Label11)
-        Me.Guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.Guna2CircleProgressBar3.FillThickness = 15
-        Me.Guna2CircleProgressBar3.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Guna2CircleProgressBar3.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar3.Location = New System.Drawing.Point(129, 19)
-        Me.Guna2CircleProgressBar3.Minimum = 0
-        Me.Guna2CircleProgressBar3.Name = "Guna2CircleProgressBar3"
-        Me.Guna2CircleProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar3.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar3.ProgressThickness = 15
-        Me.Guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar3.Size = New System.Drawing.Size(85, 85)
-        Me.Guna2CircleProgressBar3.TabIndex = 9
-        Me.Guna2CircleProgressBar3.Text = "Guna2CircleProgressBar3"
-        Me.Guna2CircleProgressBar3.UseTransparentBackground = True
-        Me.Guna2CircleProgressBar3.Value = 20
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(23, 32)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(41, 20)
-        Me.Label11.TabIndex = 10
-        Me.Label11.Text = "20%"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(12, 116)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(136, 20)
-        Me.Label12.TabIndex = 8
-        Me.Label12.Text = "Monthly Deliveries"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(3, 28)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(108, 76)
-        Me.Label13.TabIndex = 8
-        Me.Label13.Text = "20"
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel6.BorderColor = System.Drawing.Color.White
-        Me.Guna2Panel6.BorderRadius = 15
-        Me.Guna2Panel6.Controls.Add(Me.Guna2CircleProgressBar2)
-        Me.Guna2Panel6.Controls.Add(Me.Label9)
-        Me.Guna2Panel6.Controls.Add(Me.Label10)
-        Me.Guna2Panel6.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Guna2Panel6.Location = New System.Drawing.Point(861, 140)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(230, 169)
-        Me.Guna2Panel6.TabIndex = 10
-        '
-        'Guna2CircleProgressBar2
-        '
-        Me.Guna2CircleProgressBar2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleProgressBar2.Controls.Add(Me.Label8)
-        Me.Guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.Guna2CircleProgressBar2.FillThickness = 15
-        Me.Guna2CircleProgressBar2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Guna2CircleProgressBar2.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar2.Location = New System.Drawing.Point(129, 19)
-        Me.Guna2CircleProgressBar2.Minimum = 0
-        Me.Guna2CircleProgressBar2.Name = "Guna2CircleProgressBar2"
-        Me.Guna2CircleProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar2.ProgressThickness = 15
-        Me.Guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar2.Size = New System.Drawing.Size(85, 85)
-        Me.Guna2CircleProgressBar2.TabIndex = 9
-        Me.Guna2CircleProgressBar2.Text = "Guna2CircleProgressBar2"
-        Me.Guna2CircleProgressBar2.UseTransparentBackground = True
-        Me.Guna2CircleProgressBar2.Value = 50
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(23, 32)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(41, 20)
-        Me.Label8.TabIndex = 10
-        Me.Label8.Text = "50%"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(12, 116)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(131, 20)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Annual Deliveries"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(3, 28)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(108, 76)
-        Me.Label10.TabIndex = 8
-        Me.Label10.Text = "30"
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(45, 148)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(169, 39)
+        Me.Label7.TabIndex = 12
+        Me.Label7.Text = "Summary"
         '
         'Guna2Panel5
         '
         Me.Guna2Panel5.BackColor = System.Drawing.Color.White
         Me.Guna2Panel5.BorderColor = System.Drawing.Color.White
         Me.Guna2Panel5.BorderRadius = 15
-        Me.Guna2Panel5.Controls.Add(Me.Guna2CircleProgressBar1)
+        Me.Guna2Panel5.Controls.Add(Me.Guna2Panel6)
         Me.Guna2Panel5.Controls.Add(Me.Label6)
-        Me.Guna2Panel5.Controls.Add(Me.Label5)
-        Me.Guna2Panel5.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Guna2Panel5.Location = New System.Drawing.Point(40, 140)
+        Me.Guna2Panel5.Controls.Add(Me.dailyCount)
+        Me.Guna2Panel5.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel5.Location = New System.Drawing.Point(53, 204)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(230, 169)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(274, 123)
         Me.Guna2Panel5.TabIndex = 7
-        '
-        'Guna2CircleProgressBar1
-        '
-        Me.Guna2CircleProgressBar1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleProgressBar1.Controls.Add(Me.Label7)
-        Me.Guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.Guna2CircleProgressBar1.FillThickness = 15
-        Me.Guna2CircleProgressBar1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar1.Location = New System.Drawing.Point(129, 19)
-        Me.Guna2CircleProgressBar1.Minimum = 0
-        Me.Guna2CircleProgressBar1.Name = "Guna2CircleProgressBar1"
-        Me.Guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2CircleProgressBar1.ProgressThickness = 15
-        Me.Guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar1.Size = New System.Drawing.Size(85, 85)
-        Me.Guna2CircleProgressBar1.TabIndex = 9
-        Me.Guna2CircleProgressBar1.Text = "Guna2CircleProgressBar1"
-        Me.Guna2CircleProgressBar1.UseTransparentBackground = True
-        Me.Guna2CircleProgressBar1.Value = 20
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(23, 32)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 20)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "20%"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(12, 116)
+        Me.Label6.Location = New System.Drawing.Point(29, 10)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(115, 20)
+        Me.Label6.Size = New System.Drawing.Size(180, 29)
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Daily Deliveries"
         '
-        'Label5
+        'dailyCount
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(3, 28)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(108, 76)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "10"
+        Me.dailyCount.BackColor = System.Drawing.Color.White
+        Me.dailyCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dailyCount.ForeColor = System.Drawing.Color.Black
+        Me.dailyCount.Location = New System.Drawing.Point(22, 40)
+        Me.dailyCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.dailyCount.Name = "dailyCount"
+        Me.dailyCount.Size = New System.Drawing.Size(232, 76)
+        Me.dailyCount.TabIndex = 8
+        Me.dailyCount.Text = "--"
+        Me.dailyCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label4
         '
@@ -536,9 +323,10 @@ Partial Class Dashboard
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(35, 78)
+        Me.Label4.Location = New System.Drawing.Point(47, 96)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(350, 25)
+        Me.Label4.Size = New System.Drawing.Size(439, 31)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Welcome to your Admin Dashboard"
         '
@@ -548,9 +336,10 @@ Partial Class Dashboard
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(34, 37)
+        Me.Label3.Location = New System.Drawing.Point(45, 46)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(169, 31)
+        Me.Label3.Size = New System.Drawing.Size(207, 39)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Hello, User!"
         '
@@ -562,9 +351,10 @@ Partial Class Dashboard
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(651, 356)
+        Me.LinkLabel1.Location = New System.Drawing.Point(888, 366)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(88, 25)
+        Me.LinkLabel1.Size = New System.Drawing.Size(110, 31)
         Me.LinkLabel1.TabIndex = 4
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "View All"
@@ -576,9 +366,10 @@ Partial Class Dashboard
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(794, 350)
+        Me.Label2.Location = New System.Drawing.Point(1050, 357)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(177, 31)
+        Me.Label2.Size = New System.Drawing.Size(216, 39)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Notifications"
         '
@@ -588,63 +379,68 @@ Partial Class Dashboard
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(34, 350)
+        Me.Label1.Location = New System.Drawing.Point(45, 358)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(269, 31)
+        Me.Label1.Size = New System.Drawing.Size(332, 39)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Recent Parcel Logs"
         '
-        'Guna2Panel4
+        'NotificationPanel
         '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.BorderColor = System.Drawing.Color.Black
-        Me.Guna2Panel4.BorderThickness = 1
-        Me.Guna2Panel4.Controls.Add(Me.Guna2VScrollBar1)
-        Me.Guna2Panel4.Location = New System.Drawing.Point(800, 395)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(291, 559)
-        Me.Guna2Panel4.TabIndex = 1
+        Me.NotificationPanel.AutoScroll = True
+        Me.NotificationPanel.BackColor = System.Drawing.Color.White
+        Me.NotificationPanel.BorderColor = System.Drawing.Color.Black
+        Me.NotificationPanel.BorderThickness = 1
+        Me.NotificationPanel.Controls.Add(Me.NotifPanel)
+        Me.NotificationPanel.Location = New System.Drawing.Point(1057, 412)
+        Me.NotificationPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.NotificationPanel.Name = "NotificationPanel"
+        Me.NotificationPanel.Size = New System.Drawing.Size(397, 437)
+        Me.NotificationPanel.TabIndex = 1
         '
-        'Guna2VScrollBar1
+        'NotifPanel
         '
-        Me.Guna2VScrollBar1.FillColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Guna2VScrollBar1.InUpdate = False
-        Me.Guna2VScrollBar1.LargeChange = 10
-        Me.Guna2VScrollBar1.Location = New System.Drawing.Point(273, 0)
-        Me.Guna2VScrollBar1.MouseWheelBarPartitions = 15
-        Me.Guna2VScrollBar1.Name = "Guna2VScrollBar1"
-        Me.Guna2VScrollBar1.ScrollbarSize = 18
-        Me.Guna2VScrollBar1.Size = New System.Drawing.Size(18, 600)
-        Me.Guna2VScrollBar1.TabIndex = 0
-        Me.Guna2VScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.NotifPanel.Location = New System.Drawing.Point(0, 0)
+        Me.NotifPanel.Name = "NotifPanel"
+        Me.NotifPanel.Size = New System.Drawing.Size(397, 437)
+        Me.NotifPanel.TabIndex = 11
         '
-        'Guna2DataGridView1
+        'ParcelLogsTbl
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ParcelLogsTbl.AllowUserToDeleteRows = False
+        Me.ParcelLogsTbl.AllowUserToOrderColumns = True
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        Me.ParcelLogsTbl.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.ParcelLogsTbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ParcelLogsTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeight = 50
-        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        Me.ParcelLogsTbl.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.ParcelLogsTbl.ColumnHeadersHeight = 50
+        Me.ParcelLogsTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.ParcelLogsTbl.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(40, 395)
-        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.ParcelLogsTbl.DefaultCellStyle = DataGridViewCellStyle3
+        Me.ParcelLogsTbl.GridColor = System.Drawing.Color.WhiteSmoke
+        Me.ParcelLogsTbl.Location = New System.Drawing.Point(52, 414)
+        Me.ParcelLogsTbl.Margin = New System.Windows.Forms.Padding(4)
+        Me.ParcelLogsTbl.Name = "ParcelLogsTbl"
+        Me.ParcelLogsTbl.ReadOnly = True
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -652,56 +448,68 @@ Partial Class Dashboard
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(707, 559)
-        Me.Guna2DataGridView1.TabIndex = 0
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 50
-        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.ParcelLogsTbl.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.ParcelLogsTbl.RowHeadersVisible = False
+        Me.ParcelLogsTbl.RowHeadersWidth = 51
+        Me.ParcelLogsTbl.Size = New System.Drawing.Size(946, 516)
+        Me.ParcelLogsTbl.TabIndex = 0
+        Me.ParcelLogsTbl.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark
+        Me.ParcelLogsTbl.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.ParcelLogsTbl.ThemeStyle.AlternatingRowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ParcelLogsTbl.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
+        Me.ParcelLogsTbl.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.ParcelLogsTbl.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.ParcelLogsTbl.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.ParcelLogsTbl.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.ParcelLogsTbl.ThemeStyle.HeaderStyle.Height = 50
+        Me.ParcelLogsTbl.ThemeStyle.ReadOnly = True
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.Height = 22
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.LightGray
+        Me.ParcelLogsTbl.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
         '
         'Column1
         '
         Me.Column1.HeaderText = "Parcel ID"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         '
         'Column2
         '
         Me.Column2.HeaderText = "Parcel Name"
+        Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
         '
         'Column3
         '
         Me.Column3.HeaderText = "Recipient"
+        Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
         '
         'Column4
         '
         Me.Column4.HeaderText = "Locker Number"
+        Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         '
         'Column5
         '
         Me.Column5.HeaderText = "Date-Time"
+        Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
         '
         'Guna2BorderlessForm1
         '
@@ -709,15 +517,319 @@ Partial Class Dashboard
         Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
         Me.Guna2BorderlessForm1.TransparentWhileDrag = True
         '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel6.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel6.Controls.Add(Me.Label14)
+        Me.Guna2Panel6.Controls.Add(Me.Label15)
+        Me.Guna2Panel6.CustomizableEdges.TopLeft = False
+        Me.Guna2Panel6.CustomizableEdges.TopRight = False
+        Me.Guna2Panel6.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Guna2Panel6.Location = New System.Drawing.Point(-7, 0)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.Size = New System.Drawing.Size(27, 123)
+        Me.Guna2Panel6.TabIndex = 9
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Black
+        Me.Label14.Location = New System.Drawing.Point(54, 10)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(180, 29)
+        Me.Label14.TabIndex = 8
+        Me.Label14.Text = "Daily Deliveries"
+        '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(22, 40)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(232, 76)
+        Me.Label15.TabIndex = 8
+        Me.Label15.Text = "10"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel1.BorderRadius = 15
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
+        Me.Guna2Panel1.Controls.Add(Me.Label10)
+        Me.Guna2Panel1.Controls.Add(Me.weeklyCount)
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Location = New System.Drawing.Point(363, 204)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(274, 123)
+        Me.Guna2Panel1.TabIndex = 10
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel2.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Controls.Add(Me.Label8)
+        Me.Guna2Panel2.Controls.Add(Me.Label9)
+        Me.Guna2Panel2.CustomizableEdges.TopLeft = False
+        Me.Guna2Panel2.CustomizableEdges.TopRight = False
+        Me.Guna2Panel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Guna2Panel2.Location = New System.Drawing.Point(-7, 0)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(27, 123)
+        Me.Guna2Panel2.TabIndex = 9
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(54, 10)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(180, 29)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "Daily Deliveries"
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Black
+        Me.Label9.Location = New System.Drawing.Point(22, 40)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(232, 76)
+        Me.Label9.TabIndex = 8
+        Me.Label9.Text = "10"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(29, 10)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(206, 29)
+        Me.Label10.TabIndex = 8
+        Me.Label10.Text = "Weekly Deliveries"
+        '
+        'weeklyCount
+        '
+        Me.weeklyCount.BackColor = System.Drawing.Color.White
+        Me.weeklyCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.weeklyCount.ForeColor = System.Drawing.Color.Black
+        Me.weeklyCount.Location = New System.Drawing.Point(22, 40)
+        Me.weeklyCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.weeklyCount.Name = "weeklyCount"
+        Me.weeklyCount.Size = New System.Drawing.Size(232, 76)
+        Me.weeklyCount.TabIndex = 8
+        Me.weeklyCount.Text = "--"
+        Me.weeklyCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel4.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel4.BorderRadius = 15
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel7)
+        Me.Guna2Panel4.Controls.Add(Me.Label16)
+        Me.Guna2Panel4.Controls.Add(Me.monthlyCount)
+        Me.Guna2Panel4.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel4.Location = New System.Drawing.Point(675, 204)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(274, 123)
+        Me.Guna2Panel4.TabIndex = 11
+        '
+        'Guna2Panel7
+        '
+        Me.Guna2Panel7.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel7.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel7.Controls.Add(Me.Label12)
+        Me.Guna2Panel7.Controls.Add(Me.Label13)
+        Me.Guna2Panel7.CustomizableEdges.TopLeft = False
+        Me.Guna2Panel7.CustomizableEdges.TopRight = False
+        Me.Guna2Panel7.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Guna2Panel7.Location = New System.Drawing.Point(-7, 0)
+        Me.Guna2Panel7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.Size = New System.Drawing.Size(27, 123)
+        Me.Guna2Panel7.TabIndex = 9
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(54, 10)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(180, 29)
+        Me.Label12.TabIndex = 8
+        Me.Label12.Text = "Daily Deliveries"
+        '
+        'Label13
+        '
+        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.Black
+        Me.Label13.Location = New System.Drawing.Point(22, 40)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(232, 76)
+        Me.Label13.TabIndex = 8
+        Me.Label13.Text = "10"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.White
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(29, 10)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(210, 29)
+        Me.Label16.TabIndex = 8
+        Me.Label16.Text = "Monthly Deliveries"
+        '
+        'monthlyCount
+        '
+        Me.monthlyCount.BackColor = System.Drawing.Color.White
+        Me.monthlyCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.monthlyCount.ForeColor = System.Drawing.Color.Black
+        Me.monthlyCount.Location = New System.Drawing.Point(22, 40)
+        Me.monthlyCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.monthlyCount.Name = "monthlyCount"
+        Me.monthlyCount.Size = New System.Drawing.Size(232, 76)
+        Me.monthlyCount.TabIndex = 8
+        Me.monthlyCount.Text = "--"
+        Me.monthlyCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Guna2Panel8
+        '
+        Me.Guna2Panel8.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel8.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel8.BorderRadius = 20
+        Me.Guna2Panel8.BorderThickness = 5
+        Me.Guna2Panel8.Controls.Add(Me.Guna2Panel9)
+        Me.Guna2Panel8.Controls.Add(Me.Label20)
+        Me.Guna2Panel8.Controls.Add(Me.anuallyCount)
+        Me.Guna2Panel8.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel8.Location = New System.Drawing.Point(992, 204)
+        Me.Guna2Panel8.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel8.Name = "Guna2Panel8"
+        Me.Guna2Panel8.Size = New System.Drawing.Size(274, 123)
+        Me.Guna2Panel8.TabIndex = 12
+        '
+        'Guna2Panel9
+        '
+        Me.Guna2Panel9.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel9.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel9.Controls.Add(Me.Label18)
+        Me.Guna2Panel9.Controls.Add(Me.Label19)
+        Me.Guna2Panel9.CustomizableEdges.TopLeft = False
+        Me.Guna2Panel9.CustomizableEdges.TopRight = False
+        Me.Guna2Panel9.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Guna2Panel9.Location = New System.Drawing.Point(-7, 0)
+        Me.Guna2Panel9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel9.Name = "Guna2Panel9"
+        Me.Guna2Panel9.Size = New System.Drawing.Size(27, 123)
+        Me.Guna2Panel9.TabIndex = 9
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Black
+        Me.Label18.Location = New System.Drawing.Point(54, 10)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(180, 29)
+        Me.Label18.TabIndex = 8
+        Me.Label18.Text = "Daily Deliveries"
+        '
+        'Label19
+        '
+        Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.Location = New System.Drawing.Point(22, 40)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(232, 76)
+        Me.Label19.TabIndex = 8
+        Me.Label19.Text = "10"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.White
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.Black
+        Me.Label20.Location = New System.Drawing.Point(29, 10)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(204, 29)
+        Me.Label20.TabIndex = 8
+        Me.Label20.Text = "Anually Deliveries"
+        '
+        'anuallyCount
+        '
+        Me.anuallyCount.BackColor = System.Drawing.Color.White
+        Me.anuallyCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.anuallyCount.ForeColor = System.Drawing.Color.Black
+        Me.anuallyCount.Location = New System.Drawing.Point(22, 40)
+        Me.anuallyCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.anuallyCount.Name = "anuallyCount"
+        Me.anuallyCount.Size = New System.Drawing.Size(232, 76)
+        Me.anuallyCount.TabIndex = 8
+        Me.anuallyCount.Text = "--"
+        Me.anuallyCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'refreshBtn
+        '
+        Me.refreshBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.refreshBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.refreshBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.refreshBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.refreshBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(171, Byte), Integer))
+        Me.refreshBtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.refreshBtn.ForeColor = System.Drawing.Color.Black
+        Me.refreshBtn.Location = New System.Drawing.Point(1137, 869)
+        Me.refreshBtn.Name = "refreshBtn"
+        Me.refreshBtn.Size = New System.Drawing.Size(260, 61)
+        Me.refreshBtn.TabIndex = 13
+        Me.refreshBtn.Text = "Refresh"
+        '
         'Dashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(253, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1440, 1024)
+        Me.ClientSize = New System.Drawing.Size(1905, 975)
         Me.Controls.Add(Me.dashboardPnl)
         Me.Controls.Add(Me.parcelpointPnl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Dashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"
@@ -727,24 +839,24 @@ Partial Class Dashboard
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.dashboardPnl.ResumeLayout(False)
         Me.dashboardPnl.PerformLayout()
-        Me.Guna2Panel8.ResumeLayout(False)
-        Me.Guna2Panel8.PerformLayout()
-        Me.Guna2CircleProgressBar4.ResumeLayout(False)
-        Me.Guna2CircleProgressBar4.PerformLayout()
-        Me.Guna2Panel7.ResumeLayout(False)
-        Me.Guna2Panel7.PerformLayout()
-        Me.Guna2CircleProgressBar3.ResumeLayout(False)
-        Me.Guna2CircleProgressBar3.PerformLayout()
-        Me.Guna2Panel6.ResumeLayout(False)
-        Me.Guna2Panel6.PerformLayout()
-        Me.Guna2CircleProgressBar2.ResumeLayout(False)
-        Me.Guna2CircleProgressBar2.PerformLayout()
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel5.PerformLayout()
-        Me.Guna2CircleProgressBar1.ResumeLayout(False)
-        Me.Guna2CircleProgressBar1.PerformLayout()
+        Me.NotificationPanel.ResumeLayout(False)
+        CType(Me.ParcelLogsTbl, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel6.ResumeLayout(False)
+        Me.Guna2Panel6.PerformLayout()
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.Guna2Panel4.ResumeLayout(False)
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel4.PerformLayout()
+        Me.Guna2Panel7.ResumeLayout(False)
+        Me.Guna2Panel7.PerformLayout()
+        Me.Guna2Panel8.ResumeLayout(False)
+        Me.Guna2Panel8.PerformLayout()
+        Me.Guna2Panel9.ResumeLayout(False)
+        Me.Guna2Panel9.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -763,33 +875,39 @@ Partial Class Dashboard
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2VScrollBar1 As Guna.UI2.WinForms.Guna2VScrollBar
-    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents NotificationPanel As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents ParcelLogsTbl As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Label5 As Label
+    Friend WithEvents dailyCount As Label
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
-    Friend WithEvents Guna2CircleProgressBar1 As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2CircleProgressBar4 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents NotifPanel As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents anuallyCount As Label
+    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2CircleProgressBar3 As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2CircleProgressBar2 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents Label16 As Label
+    Friend WithEvents monthlyCount As Label
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents weeklyCount As Label
+    Friend WithEvents refreshBtn As Guna.UI2.WinForms.Guna2Button
 End Class

@@ -52,9 +52,10 @@ Partial Class changepassword
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(442, 137)
+        Me.Label10.Location = New System.Drawing.Point(589, 169)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(180, 22)
+        Me.Label10.Size = New System.Drawing.Size(221, 29)
         Me.Label10.TabIndex = 101
         Me.Label10.Text = "Change Password"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -74,13 +75,13 @@ Partial Class changepassword
         Me.currentpwTxtbox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentpwTxtbox2.ForeColor = System.Drawing.Color.Black
         Me.currentpwTxtbox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.currentpwTxtbox2.Location = New System.Drawing.Point(371, 303)
-        Me.currentpwTxtbox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.currentpwTxtbox2.Location = New System.Drawing.Point(495, 373)
+        Me.currentpwTxtbox2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.currentpwTxtbox2.Name = "currentpwTxtbox2"
         Me.currentpwTxtbox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.currentpwTxtbox2.PlaceholderText = ""
         Me.currentpwTxtbox2.SelectedText = ""
-        Me.currentpwTxtbox2.Size = New System.Drawing.Size(310, 37)
+        Me.currentpwTxtbox2.Size = New System.Drawing.Size(413, 46)
         Me.currentpwTxtbox2.TabIndex = 102
         '
         'backBtn
@@ -93,9 +94,10 @@ Partial Class changepassword
         Me.backBtn.FillColor = System.Drawing.Color.Transparent
         Me.backBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.backBtn.ForeColor = System.Drawing.Color.Black
-        Me.backBtn.Location = New System.Drawing.Point(346, 367)
+        Me.backBtn.Location = New System.Drawing.Point(461, 452)
+        Me.backBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.backBtn.Name = "backBtn"
-        Me.backBtn.Size = New System.Drawing.Size(173, 40)
+        Me.backBtn.Size = New System.Drawing.Size(231, 49)
         Me.backBtn.TabIndex = 104
         Me.backBtn.Text = "Back"
         '
@@ -108,9 +110,10 @@ Partial Class changepassword
         Me.nextBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.nextBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nextBtn.ForeColor = System.Drawing.Color.Black
-        Me.nextBtn.Location = New System.Drawing.Point(536, 367)
+        Me.nextBtn.Location = New System.Drawing.Point(715, 452)
+        Me.nextBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nextBtn.Name = "nextBtn"
-        Me.nextBtn.Size = New System.Drawing.Size(173, 40)
+        Me.nextBtn.Size = New System.Drawing.Size(231, 49)
         Me.nextBtn.TabIndex = 103
         Me.nextBtn.Text = "Next"
         '
@@ -126,8 +129,9 @@ Partial Class changepassword
         Me.Guna2Panel3.Controls.Add(Me.Label4)
         Me.Guna2Panel3.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1011, 66)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1348, 81)
         Me.Guna2Panel3.TabIndex = 100
         '
         'Label3
@@ -136,9 +140,10 @@ Partial Class changepassword
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(803, 32)
+        Me.Label3.Location = New System.Drawing.Point(1071, 39)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(101, 13)
+        Me.Label3.Size = New System.Drawing.Size(133, 17)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Nominate Password"
         '
@@ -149,9 +154,10 @@ Partial Class changepassword
         Me.Guna2Panel6.BorderRadius = 5
         Me.Guna2Panel6.Controls.Add(Me.Label6)
         Me.Guna2Panel6.FillColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel6.Location = New System.Drawing.Point(768, 12)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(1024, 15)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel6.TabIndex = 14
         '
         'Label6
@@ -160,9 +166,10 @@ Partial Class changepassword
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(5, 9)
+        Me.Label6.Location = New System.Drawing.Point(7, 11)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(19, 20)
+        Me.Label6.Size = New System.Drawing.Size(24, 25)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "3"
         '
@@ -172,9 +179,10 @@ Partial Class changepassword
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(802, 12)
+        Me.Label8.Location = New System.Drawing.Point(1069, 15)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(78, 20)
+        Me.Label8.Size = New System.Drawing.Size(98, 25)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Password"
         '
@@ -184,9 +192,10 @@ Partial Class changepassword
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(461, 32)
+        Me.Label7.Location = New System.Drawing.Point(615, 39)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(141, 13)
+        Me.Label7.Size = New System.Drawing.Size(190, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "One Time Pin through E-mail"
         '
@@ -197,9 +206,10 @@ Partial Class changepassword
         Me.Guna2Panel5.BorderRadius = 5
         Me.Guna2Panel5.Controls.Add(Me.Label2)
         Me.Guna2Panel5.FillColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel5.Location = New System.Drawing.Point(426, 12)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(568, 15)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel5.TabIndex = 10
         '
         'Label2
@@ -208,9 +218,10 @@ Partial Class changepassword
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(5, 9)
+        Me.Label2.Location = New System.Drawing.Point(7, 11)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(19, 20)
+        Me.Label2.Size = New System.Drawing.Size(24, 25)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "2"
         '
@@ -220,9 +231,10 @@ Partial Class changepassword
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(460, 12)
+        Me.Label1.Location = New System.Drawing.Point(613, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 20)
+        Me.Label1.Size = New System.Drawing.Size(185, 25)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Account Verification"
         '
@@ -232,9 +244,10 @@ Partial Class changepassword
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(123, 22)
+        Me.Label4.Location = New System.Drawing.Point(164, 27)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(130, 20)
+        Me.Label4.Size = New System.Drawing.Size(161, 25)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Enter your E-mail"
         '
@@ -245,9 +258,10 @@ Partial Class changepassword
         Me.Guna2Panel4.BorderRadius = 5
         Me.Guna2Panel4.Controls.Add(Me.Label5)
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel4.Location = New System.Drawing.Point(93, 12)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(124, 15)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel4.TabIndex = 0
         '
         'Label5
@@ -256,9 +270,10 @@ Partial Class changepassword
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(5, 10)
+        Me.Label5.Location = New System.Drawing.Point(7, 12)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(19, 20)
+        Me.Label5.Size = New System.Drawing.Size(24, 25)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "1"
         '
@@ -267,22 +282,24 @@ Partial Class changepassword
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(360, 273)
+        Me.Label9.Location = New System.Drawing.Point(480, 336)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(112, 16)
+        Me.Label9.Size = New System.Drawing.Size(147, 20)
         Me.Label9.TabIndex = 105
-        Me.Label9.Text = "Current Password"
+        Me.Label9.Text = "Confirm Password"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(360, 186)
+        Me.Label11.Location = New System.Drawing.Point(480, 229)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(112, 16)
+        Me.Label11.Size = New System.Drawing.Size(121, 20)
         Me.Label11.TabIndex = 107
-        Me.Label11.Text = "Current Password"
+        Me.Label11.Text = "New Password"
         '
         'currentpwTxtbox
         '
@@ -299,21 +316,21 @@ Partial Class changepassword
         Me.currentpwTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentpwTxtbox.ForeColor = System.Drawing.Color.Black
         Me.currentpwTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.currentpwTxtbox.Location = New System.Drawing.Point(371, 216)
-        Me.currentpwTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.currentpwTxtbox.Location = New System.Drawing.Point(495, 266)
+        Me.currentpwTxtbox.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.currentpwTxtbox.Name = "currentpwTxtbox"
         Me.currentpwTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.currentpwTxtbox.PlaceholderText = ""
         Me.currentpwTxtbox.SelectedText = ""
-        Me.currentpwTxtbox.Size = New System.Drawing.Size(310, 37)
+        Me.currentpwTxtbox.Size = New System.Drawing.Size(413, 46)
         Me.currentpwTxtbox.TabIndex = 106
         '
         'changepassword
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1010, 582)
+        Me.ClientSize = New System.Drawing.Size(1347, 716)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.currentpwTxtbox)
         Me.Controls.Add(Me.Label9)
@@ -323,6 +340,7 @@ Partial Class changepassword
         Me.Controls.Add(Me.nextBtn)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "changepassword"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PanelStep3"

@@ -34,7 +34,7 @@ Partial Class verification
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.messageDesc = New System.Windows.Forms.Label()
         Me.backBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.codeTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.nextBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -58,8 +58,9 @@ Partial Class verification
         Me.Guna2Panel3.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1035, 66)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1380, 81)
         Me.Guna2Panel3.TabIndex = 1
         '
         'Label3
@@ -68,9 +69,10 @@ Partial Class verification
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(803, 32)
+        Me.Label3.Location = New System.Drawing.Point(1071, 39)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(101, 13)
+        Me.Label3.Size = New System.Drawing.Size(133, 17)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Nominate Password"
         '
@@ -81,9 +83,10 @@ Partial Class verification
         Me.Guna2Panel6.BorderRadius = 5
         Me.Guna2Panel6.Controls.Add(Me.Label6)
         Me.Guna2Panel6.FillColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel6.Location = New System.Drawing.Point(768, 12)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(1024, 15)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel6.TabIndex = 14
         '
         'Label6
@@ -92,9 +95,10 @@ Partial Class verification
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(5, 9)
+        Me.Label6.Location = New System.Drawing.Point(7, 11)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(19, 20)
+        Me.Label6.Size = New System.Drawing.Size(24, 25)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "3"
         '
@@ -104,9 +108,10 @@ Partial Class verification
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(802, 12)
+        Me.Label8.Location = New System.Drawing.Point(1069, 15)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(78, 20)
+        Me.Label8.Size = New System.Drawing.Size(98, 25)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Password"
         '
@@ -116,9 +121,10 @@ Partial Class verification
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(461, 32)
+        Me.Label7.Location = New System.Drawing.Point(615, 39)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(141, 13)
+        Me.Label7.Size = New System.Drawing.Size(190, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "One Time Pin through E-mail"
         '
@@ -129,9 +135,10 @@ Partial Class verification
         Me.Guna2Panel5.BorderRadius = 5
         Me.Guna2Panel5.Controls.Add(Me.Label2)
         Me.Guna2Panel5.FillColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel5.Location = New System.Drawing.Point(426, 12)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(568, 15)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel5.TabIndex = 10
         '
         'Label2
@@ -140,9 +147,10 @@ Partial Class verification
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(5, 9)
+        Me.Label2.Location = New System.Drawing.Point(7, 11)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(19, 20)
+        Me.Label2.Size = New System.Drawing.Size(24, 25)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "2"
         '
@@ -152,9 +160,10 @@ Partial Class verification
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(460, 12)
+        Me.Label1.Location = New System.Drawing.Point(613, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 20)
+        Me.Label1.Size = New System.Drawing.Size(185, 25)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Account Verification"
         '
@@ -164,9 +173,10 @@ Partial Class verification
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(123, 22)
+        Me.Label4.Location = New System.Drawing.Point(164, 27)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(130, 20)
+        Me.Label4.Size = New System.Drawing.Size(161, 25)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Enter your E-mail"
         '
@@ -177,9 +187,10 @@ Partial Class verification
         Me.Guna2Panel4.BorderRadius = 5
         Me.Guna2Panel4.Controls.Add(Me.Label5)
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Guna2Panel4.Location = New System.Drawing.Point(93, 12)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(124, 15)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(28, 39)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(37, 48)
         Me.Guna2Panel4.TabIndex = 0
         '
         'Label5
@@ -188,23 +199,25 @@ Partial Class verification
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(5, 10)
+        Me.Label5.Location = New System.Drawing.Point(7, 12)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(19, 20)
+        Me.Label5.Size = New System.Drawing.Size(24, 25)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "1"
         '
-        'Label9
+        'messageDesc
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(436, 221)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(180, 32)
-        Me.Label9.TabIndex = 99
-        Me.Label9.Text = "Please enter the code sent to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ah*******9@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.messageDesc.AutoSize = True
+        Me.messageDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.messageDesc.ForeColor = System.Drawing.Color.Black
+        Me.messageDesc.Location = New System.Drawing.Point(581, 272)
+        Me.messageDesc.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.messageDesc.Name = "messageDesc"
+        Me.messageDesc.Size = New System.Drawing.Size(228, 40)
+        Me.messageDesc.TabIndex = 99
+        Me.messageDesc.Text = "Please enter the code sent to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ah*******9@gmail.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.messageDesc.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'backBtn
         '
@@ -216,9 +229,10 @@ Partial Class verification
         Me.backBtn.FillColor = System.Drawing.Color.Transparent
         Me.backBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.backBtn.ForeColor = System.Drawing.Color.Black
-        Me.backBtn.Location = New System.Drawing.Point(344, 342)
+        Me.backBtn.Location = New System.Drawing.Point(459, 421)
+        Me.backBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.backBtn.Name = "backBtn"
-        Me.backBtn.Size = New System.Drawing.Size(173, 40)
+        Me.backBtn.Size = New System.Drawing.Size(231, 49)
         Me.backBtn.TabIndex = 98
         Me.backBtn.Text = "Back"
         '
@@ -237,13 +251,13 @@ Partial Class verification
         Me.codeTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.codeTxtbox.ForeColor = System.Drawing.Color.Black
         Me.codeTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.codeTxtbox.Location = New System.Drawing.Point(371, 278)
-        Me.codeTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.codeTxtbox.Location = New System.Drawing.Point(495, 342)
+        Me.codeTxtbox.Margin = New System.Windows.Forms.Padding(5)
         Me.codeTxtbox.Name = "codeTxtbox"
         Me.codeTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.codeTxtbox.PlaceholderText = ""
         Me.codeTxtbox.SelectedText = ""
-        Me.codeTxtbox.Size = New System.Drawing.Size(310, 37)
+        Me.codeTxtbox.Size = New System.Drawing.Size(413, 46)
         Me.codeTxtbox.TabIndex = 96
         '
         'nextBtn
@@ -255,9 +269,10 @@ Partial Class verification
         Me.nextBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.nextBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nextBtn.ForeColor = System.Drawing.Color.Black
-        Me.nextBtn.Location = New System.Drawing.Point(534, 342)
+        Me.nextBtn.Location = New System.Drawing.Point(712, 421)
+        Me.nextBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.nextBtn.Name = "nextBtn"
-        Me.nextBtn.Size = New System.Drawing.Size(173, 40)
+        Me.nextBtn.Size = New System.Drawing.Size(231, 49)
         Me.nextBtn.TabIndex = 97
         Me.nextBtn.Text = "Next"
         '
@@ -266,26 +281,28 @@ Partial Class verification
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(442, 179)
+        Me.Label10.Location = New System.Drawing.Point(589, 220)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(168, 22)
+        Me.Label10.Size = New System.Drawing.Size(210, 29)
         Me.Label10.TabIndex = 95
         Me.Label10.Text = "Verification Code"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'verification
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1035, 633)
-        Me.Controls.Add(Me.Label9)
+        Me.ClientSize = New System.Drawing.Size(1380, 779)
+        Me.Controls.Add(Me.messageDesc)
         Me.Controls.Add(Me.backBtn)
         Me.Controls.Add(Me.codeTxtbox)
         Me.Controls.Add(Me.nextBtn)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "verification"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PanelStep2"
@@ -314,7 +331,7 @@ Partial Class verification
     Friend WithEvents Label4 As Label
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents messageDesc As Label
     Friend WithEvents backBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents codeTxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents nextBtn As Guna.UI2.WinForms.Guna2Button

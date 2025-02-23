@@ -25,6 +25,7 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -36,7 +37,6 @@ Partial Class Login
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,7 +59,7 @@ Partial Class Login
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(474, 1024)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(474, 753)
         Me.Guna2Panel1.TabIndex = 0
         '
         'LinkLabel1
@@ -69,11 +69,23 @@ Partial Class Login
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
         Me.LinkLabel1.Location = New System.Drawing.Point(320, 579)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(92, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(116, 16)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Forgot Password?"
         Me.LinkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(72, Byte), Integer))
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(49, 346)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(200, 25)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Login your account."
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label5
         '
@@ -82,7 +94,7 @@ Partial Class Login
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(49, 311)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(151, 22)
+        Me.Label5.Size = New System.Drawing.Size(188, 29)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Welcome Back!"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -94,7 +106,7 @@ Partial Class Login
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(49, 513)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 16)
+        Me.Label4.Size = New System.Drawing.Size(87, 19)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Password"
         '
@@ -105,7 +117,7 @@ Partial Class Login
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(49, 418)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(71, 16)
+        Me.Label3.Size = New System.Drawing.Size(88, 19)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Username"
         '
@@ -141,7 +153,7 @@ Partial Class Login
         Me.TxtboxPassword.IconRightCursor = System.Windows.Forms.Cursors.Hand
         Me.TxtboxPassword.IconRightSize = New System.Drawing.Size(18, 13)
         Me.TxtboxPassword.Location = New System.Drawing.Point(53, 535)
-        Me.TxtboxPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtboxPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtboxPassword.Name = "TxtboxPassword"
         Me.TxtboxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.TxtboxPassword.PlaceholderText = ""
@@ -163,7 +175,7 @@ Partial Class Login
         Me.TxtboxEmail.ForeColor = System.Drawing.Color.Black
         Me.TxtboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TxtboxEmail.Location = New System.Drawing.Point(53, 440)
-        Me.TxtboxEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtboxEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtboxEmail.Name = "TxtboxEmail"
         Me.TxtboxEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TxtboxEmail.PlaceholderText = ""
@@ -187,7 +199,7 @@ Partial Class Login
         Me.Guna2PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox4.Image = Global.Admin_Panel.My.Resources.Resources.Label2
         Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(50, 827)
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(40, 627)
         Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
         Me.Guna2PictureBox4.Size = New System.Drawing.Size(710, 77)
         Me.Guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -200,7 +212,7 @@ Partial Class Login
         Me.Guna2PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox3.Image = Global.Admin_Panel.My.Resources.Resources.Label1
         Me.Guna2PictureBox3.ImageRotate = 0!
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(61, 753)
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(30, 579)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
         Me.Guna2PictureBox3.Size = New System.Drawing.Size(583, 44)
         Me.Guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -232,22 +244,10 @@ Partial Class Login
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(49, 346)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(155, 19)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Login your account."
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Login
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.ClientSize = New System.Drawing.Size(1413, 1024)
+        Me.ClientSize = New System.Drawing.Size(1413, 753)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
