@@ -7,6 +7,7 @@ Public Class Dashboard
     Public Username As String
     Public userID As String
     Private ManageUsersPage As New ManageUsers(Me)
+    Private UtilitiesPage As New Utilities(Me)
 
     Public Sub New(username As String, userID As String)
         InitializeComponent()
@@ -129,11 +130,11 @@ Public Class Dashboard
             .Hide()
         End With
 
-        With Utilities
+        With UtilitiesPage
             .TopLevel = False
             .Size = dashboardPnl.Size
             .Dock = DockStyle.Fill
-            dashboardPnl.Controls.Add(Utilities)
+            dashboardPnl.Controls.Add(UtilitiesPage)
             .BringToFront()
             .Hide()
         End With
@@ -142,11 +143,11 @@ Public Class Dashboard
 
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles utilitiesBtn.Click
-        With Utilities
+        With UtilitiesPage
             .TopLevel = False
             .Size = dashboardPnl.Size
             .Dock = DockStyle.Fill
-            dashboardPnl.Controls.Add(Utilities)
+            dashboardPnl.Controls.Add(UtilitiesPage)
             .BringToFront()
             .Show()
         End With

@@ -2,7 +2,7 @@
 Imports Admin_Panel.ManageUsersService
 
 Public Class ManageUsers
-    Private parent As Dashboard
+    Public parent As Dashboard
     Private _allResidents As List(Of UserDetailsDto) = Nothing
     Private _allAdmin As List(Of UserDetailsDto) = Nothing
 
@@ -18,7 +18,8 @@ Public Class ManageUsers
     End Sub
 
     Private Sub registerBtn_Click(sender As Object, e As EventArgs) Handles AddAdminBtn.Click
-        Adminregform.Show()
+        Dim addAdminForm As New Adminregform(Me, "ADD ADMIN")
+        addAdminForm.Show()
     End Sub
 
     Private Sub ManageUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -427,8 +428,6 @@ Public Class ManageUsers
     End Sub
 
     Private Sub dgvAdmin_CellClick(sender As Object, e As DataGridViewCellEventArgs)
-
-
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
             If dgvAdmins.Columns(e.ColumnIndex).Name = "Action" Then
                 ' Get the bounding rectangle of the clicked cell.
@@ -446,13 +445,49 @@ Public Class ManageUsers
 
                 ' Check if the user clicked inside the "View" button
                 If viewRect.Contains(clickPoint) Then
-                    ' TODO: Your "View" logic (open details form, etc.)
-                    MessageBox.Show($"View clicked on row {e.RowIndex}.")
+
+                    Dim userData As RegisterUserDto = New RegisterUserDto With {
+                        .UserId = _allAdmin(e.RowIndex).userId,
+                        .FirstName = _allAdmin(e.RowIndex).firstName,
+                        .MiddleName = _allAdmin(e.RowIndex).middleName,
+                        .LastName = _allAdmin(e.RowIndex).lastName,
+                        .Suffix = _allAdmin(e.RowIndex).suffix,
+                        .BirthDate = _allAdmin(e.RowIndex).birthdate,
+                        .Gender = _allAdmin(e.RowIndex).genderID,
+                        .Address = _allAdmin(e.RowIndex).address,
+                        .Email = _allAdmin(e.RowIndex).email,
+                        .ContactNumber = _allAdmin(e.RowIndex).contactNumber,
+                        .Username = _allAdmin(e.RowIndex).username,
+                        .Password = "",
+                        .Role = _allAdmin(e.RowIndex).roleID,
+                        .OperatorId = parent.userID,
+                        .UserType = "Admin"
+                        }
+                    Dim updateForm As Adminregform = New Adminregform(Me, "VIEW", True, userData)
+                    updateForm.Show()
 
                     ' Check if the user clicked inside the "Update" button
                 ElseIf updateRect.Contains(clickPoint) Then
-                    ' TODO: Your "Update" logic (open edit form, etc.)
-                    MessageBox.Show($"Update clicked on row {e.RowIndex}.")
+
+                    Dim userData As RegisterUserDto = New RegisterUserDto With {
+                        .UserId = _allAdmin(e.RowIndex).userId,
+                        .FirstName = _allAdmin(e.RowIndex).firstName,
+                        .MiddleName = _allAdmin(e.RowIndex).middleName,
+                        .LastName = _allAdmin(e.RowIndex).lastName,
+                        .Suffix = _allAdmin(e.RowIndex).suffix,
+                        .BirthDate = _allAdmin(e.RowIndex).birthdate,
+                        .Gender = _allAdmin(e.RowIndex).genderID,
+                        .Address = _allAdmin(e.RowIndex).address,
+                        .Email = _allAdmin(e.RowIndex).email,
+                        .ContactNumber = _allAdmin(e.RowIndex).contactNumber,
+                        .Username = _allAdmin(e.RowIndex).username,
+                        .Password = "",
+                        .Role = _allAdmin(e.RowIndex).roleID,
+                        .OperatorId = parent.userID,
+                        .UserType = "Admin"
+                        }
+                    Dim updateForm As Adminregform = New Adminregform(Me, "UPDATE ADMIN", False, userData)
+                    updateForm.Show()
                 End If
             End If
         End If
@@ -483,14 +518,31 @@ Public Class ManageUsers
 
                     ' Check if the user clicked inside the "Update" button
                 ElseIf updateRect.Contains(clickPoint) Then
-                    ' TODO: Your "Update" logic (open edit form, etc.)
-                    MessageBox.Show($"Update clicked on row {e.RowIndex}.")
+                    Dim userData As RegisterUserDto = New RegisterUserDto With {
+                        .UserId = _allResidents(e.RowIndex).userId,
+                        .FirstName = _allResidents(e.RowIndex).firstName,
+                        .MiddleName = _allResidents(e.RowIndex).middleName,
+                        .LastName = _allResidents(e.RowIndex).lastName,
+                        .Suffix = _allResidents(e.RowIndex).suffix,
+                        .BirthDate = _allResidents(e.RowIndex).birthdate,
+                        .Gender = _allResidents(e.RowIndex).genderID,
+                        .Address = _allResidents(e.RowIndex).address,
+                        .Email = _allResidents(e.RowIndex).email,
+                        .ContactNumber = _allResidents(e.RowIndex).contactNumber,
+                        .Username = _allResidents(e.RowIndex).username,
+                        .Password = "",
+                        .Role = _allResidents(e.RowIndex).roleID,
+                        .OperatorId = parent.userID,
+                        .UserType = "Users"
+                        }
+                    Dim updateForm As Adminregform = New Adminregform(Me, "UPDATE USERS", False, userData)
+                    updateForm.Show()
                 End If
             End If
         End If
     End Sub
 
-    Private Sub Reload_Data()
+    Public Sub Reload_Data()
         LoadAllResidence()
         LoadAllAdmin()
     End Sub

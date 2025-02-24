@@ -32,16 +32,16 @@ Partial Class Adminregform
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.genderCombobox = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.birthdaytime = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.Birthdaytimepicker = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Txtboxlname = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.suffixtxtbox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lnametxtbox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.mnametxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Txtboxfname = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.fnametxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.cancelBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.passwordTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -50,11 +50,11 @@ Partial Class Adminregform
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.UsernameTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.lnameTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.emailtxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.fnameTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.contacttxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Adminrefform.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,16 +69,18 @@ Partial Class Adminregform
         Me.Adminrefform.Controls.Add(Me.Guna2PictureBox1)
         Me.Adminrefform.Dock = System.Windows.Forms.DockStyle.Top
         Me.Adminrefform.Location = New System.Drawing.Point(0, 0)
+        Me.Adminrefform.Margin = New System.Windows.Forms.Padding(4)
         Me.Adminrefform.Name = "Adminrefform"
-        Me.Adminrefform.Size = New System.Drawing.Size(806, 35)
+        Me.Adminrefform.Size = New System.Drawing.Size(1075, 43)
         Me.Adminrefform.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 8)
+        Me.Label6.Location = New System.Drawing.Point(16, 10)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(190, 20)
+        Me.Label6.Size = New System.Drawing.Size(253, 25)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Admin Registration Form"
         '
@@ -88,10 +90,11 @@ Partial Class Adminregform
         Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Black
         Me.Guna2PictureBox2.Image = Global.Admin_Panel.My.Resources.Resources.Close
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(784, 0)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1045, 0)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.BorderRadius = 10
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(22, 28)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(29, 34)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 1
         Me.Guna2PictureBox2.TabStop = False
@@ -103,10 +106,11 @@ Partial Class Adminregform
         Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Black
         Me.Guna2PictureBox1.Image = Global.Admin_Panel.My.Resources.Resources.Close
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1008, 3)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1344, 4)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.BorderRadius = 10
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(22, 28)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(29, 34)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
@@ -120,20 +124,21 @@ Partial Class Adminregform
         Me.Guna2Panel2.Controls.Add(Me.Label3)
         Me.Guna2Panel2.Controls.Add(Me.Label4)
         Me.Guna2Panel2.Controls.Add(Me.genderCombobox)
-        Me.Guna2Panel2.Controls.Add(Me.birthdaytime)
+        Me.Guna2Panel2.Controls.Add(Me.Birthdaytimepicker)
         Me.Guna2Panel2.Controls.Add(Me.Label2)
         Me.Guna2Panel2.Controls.Add(Me.Label1)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2TextBox3)
-        Me.Guna2Panel2.Controls.Add(Me.Txtboxlname)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2Panel2.Controls.Add(Me.suffixtxtbox)
+        Me.Guna2Panel2.Controls.Add(Me.lnametxtbox)
+        Me.Guna2Panel2.Controls.Add(Me.mnametxtbox)
         Me.Guna2Panel2.Controls.Add(Me.Label13)
         Me.Guna2Panel2.Controls.Add(Me.Label11)
         Me.Guna2Panel2.Controls.Add(Me.Label12)
-        Me.Guna2Panel2.Controls.Add(Me.Txtboxfname)
+        Me.Guna2Panel2.Controls.Add(Me.fnametxtbox)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 35)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 43)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(483, 588)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(644, 724)
         Me.Guna2Panel2.TabIndex = 2
         '
         'Label5
@@ -141,9 +146,10 @@ Partial Class Adminregform
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(35, 340)
+        Me.Label5.Location = New System.Drawing.Point(47, 418)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 16)
+        Me.Label5.Size = New System.Drawing.Size(71, 20)
         Me.Label5.TabIndex = 78
         Me.Label5.Text = "Address"
         '
@@ -160,13 +166,13 @@ Partial Class Adminregform
         Me.addressTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addressTxtbox.ForeColor = System.Drawing.Color.Black
         Me.addressTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.addressTxtbox.Location = New System.Drawing.Point(35, 369)
-        Me.addressTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addressTxtbox.Location = New System.Drawing.Point(47, 454)
+        Me.addressTxtbox.Margin = New System.Windows.Forms.Padding(5)
         Me.addressTxtbox.Name = "addressTxtbox"
         Me.addressTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.addressTxtbox.PlaceholderText = ""
         Me.addressTxtbox.SelectedText = ""
-        Me.addressTxtbox.Size = New System.Drawing.Size(426, 60)
+        Me.addressTxtbox.Size = New System.Drawing.Size(568, 74)
         Me.addressTxtbox.TabIndex = 77
         '
         'Label3
@@ -174,9 +180,10 @@ Partial Class Adminregform
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(267, 251)
+        Me.Label3.Location = New System.Drawing.Point(356, 309)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(52, 16)
+        Me.Label3.Size = New System.Drawing.Size(64, 20)
         Me.Label3.TabIndex = 76
         Me.Label3.Text = "Gender"
         '
@@ -185,9 +192,10 @@ Partial Class Adminregform
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(35, 251)
+        Me.Label4.Location = New System.Drawing.Point(47, 309)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(56, 16)
+        Me.Label4.Size = New System.Drawing.Size(71, 20)
         Me.Label4.TabIndex = 75
         Me.Label4.Text = "Birthday"
         '
@@ -204,35 +212,38 @@ Partial Class Adminregform
         Me.genderCombobox.ForeColor = System.Drawing.Color.Black
         Me.genderCombobox.ItemHeight = 30
         Me.genderCombobox.Items.AddRange(New Object() {"Male ", "Female"})
-        Me.genderCombobox.Location = New System.Drawing.Point(267, 279)
+        Me.genderCombobox.Location = New System.Drawing.Point(356, 343)
+        Me.genderCombobox.Margin = New System.Windows.Forms.Padding(4)
         Me.genderCombobox.Name = "genderCombobox"
-        Me.genderCombobox.Size = New System.Drawing.Size(194, 36)
+        Me.genderCombobox.Size = New System.Drawing.Size(257, 36)
         Me.genderCombobox.StartIndex = 1
         Me.genderCombobox.TabIndex = 74
         '
-        'birthdaytime
+        'Birthdaytimepicker
         '
-        Me.birthdaytime.Checked = True
-        Me.birthdaytime.FillColor = System.Drawing.Color.White
-        Me.birthdaytime.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.birthdaytime.ForeColor = System.Drawing.Color.Black
-        Me.birthdaytime.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.birthdaytime.Location = New System.Drawing.Point(35, 279)
-        Me.birthdaytime.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.birthdaytime.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.birthdaytime.Name = "birthdaytime"
-        Me.birthdaytime.Size = New System.Drawing.Size(210, 37)
-        Me.birthdaytime.TabIndex = 73
-        Me.birthdaytime.Value = New Date(2025, 1, 22, 18, 34, 52, 625)
+        Me.Birthdaytimepicker.Checked = True
+        Me.Birthdaytimepicker.FillColor = System.Drawing.Color.White
+        Me.Birthdaytimepicker.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Birthdaytimepicker.ForeColor = System.Drawing.Color.Black
+        Me.Birthdaytimepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.Birthdaytimepicker.Location = New System.Drawing.Point(47, 343)
+        Me.Birthdaytimepicker.Margin = New System.Windows.Forms.Padding(4)
+        Me.Birthdaytimepicker.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.Birthdaytimepicker.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        Me.Birthdaytimepicker.Name = "Birthdaytimepicker"
+        Me.Birthdaytimepicker.Size = New System.Drawing.Size(280, 46)
+        Me.Birthdaytimepicker.TabIndex = 73
+        Me.Birthdaytimepicker.Value = New Date(2025, 1, 22, 18, 34, 52, 625)
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(267, 163)
+        Me.Label2.Location = New System.Drawing.Point(356, 201)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 16)
+        Me.Label2.Size = New System.Drawing.Size(51, 20)
         Me.Label2.TabIndex = 72
         Me.Label2.Text = "Suffix"
         '
@@ -241,86 +252,88 @@ Partial Class Adminregform
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(264, 72)
+        Me.Label1.Location = New System.Drawing.Point(352, 89)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 16)
+        Me.Label1.Size = New System.Drawing.Size(107, 20)
         Me.Label1.TabIndex = 71
         Me.Label1.Text = "Middle Name"
         '
-        'Guna2TextBox3
+        'suffixtxtbox
         '
-        Me.Guna2TextBox3.BorderColor = System.Drawing.Color.Black
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(267, 194)
-        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderText = ""
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(194, 37)
-        Me.Guna2TextBox3.TabIndex = 70
+        Me.suffixtxtbox.BorderColor = System.Drawing.Color.Black
+        Me.suffixtxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.suffixtxtbox.DefaultText = ""
+        Me.suffixtxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.suffixtxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.suffixtxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.suffixtxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.suffixtxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.suffixtxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.suffixtxtbox.ForeColor = System.Drawing.Color.Black
+        Me.suffixtxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.suffixtxtbox.Location = New System.Drawing.Point(356, 239)
+        Me.suffixtxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.suffixtxtbox.Name = "suffixtxtbox"
+        Me.suffixtxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.suffixtxtbox.PlaceholderText = ""
+        Me.suffixtxtbox.SelectedText = ""
+        Me.suffixtxtbox.Size = New System.Drawing.Size(259, 46)
+        Me.suffixtxtbox.TabIndex = 70
         '
-        'Txtboxlname
+        'lnametxtbox
         '
-        Me.Txtboxlname.BorderColor = System.Drawing.Color.Black
-        Me.Txtboxlname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txtboxlname.DefaultText = ""
-        Me.Txtboxlname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Txtboxlname.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Txtboxlname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Txtboxlname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Txtboxlname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Txtboxlname.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txtboxlname.ForeColor = System.Drawing.Color.Black
-        Me.Txtboxlname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Txtboxlname.Location = New System.Drawing.Point(35, 194)
-        Me.Txtboxlname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Txtboxlname.Name = "Txtboxlname"
-        Me.Txtboxlname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Txtboxlname.PlaceholderText = ""
-        Me.Txtboxlname.SelectedText = ""
-        Me.Txtboxlname.Size = New System.Drawing.Size(210, 37)
-        Me.Txtboxlname.TabIndex = 69
+        Me.lnametxtbox.BorderColor = System.Drawing.Color.Black
+        Me.lnametxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lnametxtbox.DefaultText = ""
+        Me.lnametxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lnametxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lnametxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lnametxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lnametxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lnametxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lnametxtbox.ForeColor = System.Drawing.Color.Black
+        Me.lnametxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lnametxtbox.Location = New System.Drawing.Point(47, 239)
+        Me.lnametxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.lnametxtbox.Name = "lnametxtbox"
+        Me.lnametxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lnametxtbox.PlaceholderText = ""
+        Me.lnametxtbox.SelectedText = ""
+        Me.lnametxtbox.Size = New System.Drawing.Size(280, 46)
+        Me.lnametxtbox.TabIndex = 69
         '
-        'Guna2TextBox1
+        'mnametxtbox
         '
-        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(267, 103)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(194, 37)
-        Me.Guna2TextBox1.TabIndex = 68
+        Me.mnametxtbox.BorderColor = System.Drawing.Color.Black
+        Me.mnametxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.mnametxtbox.DefaultText = ""
+        Me.mnametxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.mnametxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.mnametxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.mnametxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.mnametxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.mnametxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnametxtbox.ForeColor = System.Drawing.Color.Black
+        Me.mnametxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.mnametxtbox.Location = New System.Drawing.Point(356, 127)
+        Me.mnametxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.mnametxtbox.Name = "mnametxtbox"
+        Me.mnametxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.mnametxtbox.PlaceholderText = ""
+        Me.mnametxtbox.SelectedText = ""
+        Me.mnametxtbox.Size = New System.Drawing.Size(259, 46)
+        Me.mnametxtbox.TabIndex = 68
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(31, 33)
+        Me.Label13.Location = New System.Drawing.Point(41, 41)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(198, 22)
+        Me.Label13.Size = New System.Drawing.Size(249, 29)
         Me.Label13.TabIndex = 66
         Me.Label13.Text = "Account Information"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -330,9 +343,10 @@ Partial Class Adminregform
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(35, 163)
+        Me.Label11.Location = New System.Drawing.Point(47, 201)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(72, 16)
+        Me.Label11.Size = New System.Drawing.Size(91, 20)
         Me.Label11.TabIndex = 65
         Me.Label11.Text = "Last Name"
         '
@@ -341,33 +355,34 @@ Partial Class Adminregform
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(34, 72)
+        Me.Label12.Location = New System.Drawing.Point(45, 89)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(72, 16)
+        Me.Label12.Size = New System.Drawing.Size(92, 20)
         Me.Label12.TabIndex = 64
         Me.Label12.Text = "First Name"
         '
-        'Txtboxfname
+        'fnametxtbox
         '
-        Me.Txtboxfname.BorderColor = System.Drawing.Color.Black
-        Me.Txtboxfname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txtboxfname.DefaultText = ""
-        Me.Txtboxfname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Txtboxfname.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Txtboxfname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Txtboxfname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Txtboxfname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Txtboxfname.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txtboxfname.ForeColor = System.Drawing.Color.Black
-        Me.Txtboxfname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Txtboxfname.Location = New System.Drawing.Point(35, 103)
-        Me.Txtboxfname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Txtboxfname.Name = "Txtboxfname"
-        Me.Txtboxfname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Txtboxfname.PlaceholderText = ""
-        Me.Txtboxfname.SelectedText = ""
-        Me.Txtboxfname.Size = New System.Drawing.Size(210, 37)
-        Me.Txtboxfname.TabIndex = 63
+        Me.fnametxtbox.BorderColor = System.Drawing.Color.Black
+        Me.fnametxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.fnametxtbox.DefaultText = ""
+        Me.fnametxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.fnametxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.fnametxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.fnametxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.fnametxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.fnametxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fnametxtbox.ForeColor = System.Drawing.Color.Black
+        Me.fnametxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.fnametxtbox.Location = New System.Drawing.Point(47, 127)
+        Me.fnametxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.fnametxtbox.Name = "fnametxtbox"
+        Me.fnametxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.fnametxtbox.PlaceholderText = ""
+        Me.fnametxtbox.SelectedText = ""
+        Me.fnametxtbox.Size = New System.Drawing.Size(280, 46)
+        Me.fnametxtbox.TabIndex = 63
         '
         'Guna2Panel3
         '
@@ -379,15 +394,16 @@ Partial Class Adminregform
         Me.Guna2Panel3.Controls.Add(Me.Label14)
         Me.Guna2Panel3.Controls.Add(Me.Label15)
         Me.Guna2Panel3.Controls.Add(Me.UsernameTxtbox)
-        Me.Guna2Panel3.Controls.Add(Me.lnameTxtbox)
+        Me.Guna2Panel3.Controls.Add(Me.emailtxtbox)
         Me.Guna2Panel3.Controls.Add(Me.Label7)
         Me.Guna2Panel3.Controls.Add(Me.Label8)
         Me.Guna2Panel3.Controls.Add(Me.Label9)
-        Me.Guna2Panel3.Controls.Add(Me.fnameTxtbox)
+        Me.Guna2Panel3.Controls.Add(Me.contacttxtbox)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Guna2Panel3.Location = New System.Drawing.Point(482, 35)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(643, 43)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(324, 588)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(432, 724)
         Me.Guna2Panel3.TabIndex = 3
         '
         'cancelBtn
@@ -401,9 +417,10 @@ Partial Class Adminregform
         Me.cancelBtn.FillColor = System.Drawing.Color.Transparent
         Me.cancelBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelBtn.ForeColor = System.Drawing.Color.White
-        Me.cancelBtn.Location = New System.Drawing.Point(25, 489)
+        Me.cancelBtn.Location = New System.Drawing.Point(33, 602)
+        Me.cancelBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.cancelBtn.Name = "cancelBtn"
-        Me.cancelBtn.Size = New System.Drawing.Size(128, 40)
+        Me.cancelBtn.Size = New System.Drawing.Size(171, 49)
         Me.cancelBtn.TabIndex = 89
         Me.cancelBtn.Text = "Cancel"
         '
@@ -420,13 +437,13 @@ Partial Class Adminregform
         Me.passwordTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passwordTxtbox.ForeColor = System.Drawing.Color.Black
         Me.passwordTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.passwordTxtbox.Location = New System.Drawing.Point(25, 412)
-        Me.passwordTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.passwordTxtbox.Location = New System.Drawing.Point(33, 507)
+        Me.passwordTxtbox.Margin = New System.Windows.Forms.Padding(5)
         Me.passwordTxtbox.Name = "passwordTxtbox"
         Me.passwordTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.passwordTxtbox.PlaceholderText = ""
         Me.passwordTxtbox.SelectedText = ""
-        Me.passwordTxtbox.Size = New System.Drawing.Size(271, 37)
+        Me.passwordTxtbox.Size = New System.Drawing.Size(361, 46)
         Me.passwordTxtbox.TabIndex = 87
         '
         'addBtn
@@ -437,10 +454,11 @@ Partial Class Adminregform
         Me.addBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.addBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(253, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(132, Byte), Integer))
         Me.addBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addBtn.ForeColor = System.Drawing.Color.White
-        Me.addBtn.Location = New System.Drawing.Point(168, 489)
+        Me.addBtn.ForeColor = System.Drawing.Color.Black
+        Me.addBtn.Location = New System.Drawing.Point(224, 602)
+        Me.addBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.addBtn.Name = "addBtn"
-        Me.addBtn.Size = New System.Drawing.Size(128, 40)
+        Me.addBtn.Size = New System.Drawing.Size(171, 49)
         Me.addBtn.TabIndex = 88
         Me.addBtn.Text = "Add"
         '
@@ -449,9 +467,10 @@ Partial Class Adminregform
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(23, 251)
+        Me.Label10.Location = New System.Drawing.Point(31, 309)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(198, 22)
+        Me.Label10.Size = New System.Drawing.Size(249, 29)
         Me.Label10.TabIndex = 83
         Me.Label10.Text = "Account Information"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -461,9 +480,10 @@ Partial Class Adminregform
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(25, 381)
+        Me.Label14.Location = New System.Drawing.Point(33, 469)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(67, 16)
+        Me.Label14.Size = New System.Drawing.Size(83, 20)
         Me.Label14.TabIndex = 86
         Me.Label14.Text = "Password"
         '
@@ -472,9 +492,10 @@ Partial Class Adminregform
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(24, 290)
+        Me.Label15.Location = New System.Drawing.Point(32, 357)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(70, 16)
+        Me.Label15.Size = New System.Drawing.Size(86, 20)
         Me.Label15.TabIndex = 85
         Me.Label15.Text = "Username"
         '
@@ -491,45 +512,46 @@ Partial Class Adminregform
         Me.UsernameTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameTxtbox.ForeColor = System.Drawing.Color.Black
         Me.UsernameTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.UsernameTxtbox.Location = New System.Drawing.Point(25, 321)
-        Me.UsernameTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.UsernameTxtbox.Location = New System.Drawing.Point(33, 395)
+        Me.UsernameTxtbox.Margin = New System.Windows.Forms.Padding(5)
         Me.UsernameTxtbox.Name = "UsernameTxtbox"
         Me.UsernameTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UsernameTxtbox.PlaceholderText = ""
         Me.UsernameTxtbox.SelectedText = ""
-        Me.UsernameTxtbox.Size = New System.Drawing.Size(271, 37)
+        Me.UsernameTxtbox.Size = New System.Drawing.Size(361, 46)
         Me.UsernameTxtbox.TabIndex = 84
         '
-        'lnameTxtbox
+        'emailtxtbox
         '
-        Me.lnameTxtbox.BorderColor = System.Drawing.Color.Black
-        Me.lnameTxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.lnameTxtbox.DefaultText = ""
-        Me.lnameTxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.lnameTxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.lnameTxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.lnameTxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.lnameTxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lnameTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lnameTxtbox.ForeColor = System.Drawing.Color.Black
-        Me.lnameTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lnameTxtbox.Location = New System.Drawing.Point(27, 194)
-        Me.lnameTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.lnameTxtbox.Name = "lnameTxtbox"
-        Me.lnameTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.lnameTxtbox.PlaceholderText = ""
-        Me.lnameTxtbox.SelectedText = ""
-        Me.lnameTxtbox.Size = New System.Drawing.Size(271, 37)
-        Me.lnameTxtbox.TabIndex = 82
+        Me.emailtxtbox.BorderColor = System.Drawing.Color.Black
+        Me.emailtxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.emailtxtbox.DefaultText = ""
+        Me.emailtxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.emailtxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.emailtxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.emailtxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.emailtxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.emailtxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailtxtbox.ForeColor = System.Drawing.Color.Black
+        Me.emailtxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.emailtxtbox.Location = New System.Drawing.Point(36, 239)
+        Me.emailtxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.emailtxtbox.Name = "emailtxtbox"
+        Me.emailtxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.emailtxtbox.PlaceholderText = ""
+        Me.emailtxtbox.SelectedText = ""
+        Me.emailtxtbox.Size = New System.Drawing.Size(361, 46)
+        Me.emailtxtbox.TabIndex = 82
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(25, 33)
+        Me.Label7.Location = New System.Drawing.Point(33, 41)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(193, 22)
+        Me.Label7.Size = New System.Drawing.Size(242, 29)
         Me.Label7.TabIndex = 79
         Me.Label7.Text = "Contact Information"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -539,54 +561,57 @@ Partial Class Adminregform
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(27, 163)
+        Me.Label8.Location = New System.Drawing.Point(36, 201)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(72, 16)
+        Me.Label8.Size = New System.Drawing.Size(57, 20)
         Me.Label8.TabIndex = 81
-        Me.Label8.Text = "Last Name"
+        Me.Label8.Text = "E-Mail"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(26, 72)
+        Me.Label9.Location = New System.Drawing.Point(35, 89)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(72, 16)
+        Me.Label9.Size = New System.Drawing.Size(131, 20)
         Me.Label9.TabIndex = 80
-        Me.Label9.Text = "First Name"
+        Me.Label9.Text = "Contact Number"
         '
-        'fnameTxtbox
+        'contacttxtbox
         '
-        Me.fnameTxtbox.BorderColor = System.Drawing.Color.Black
-        Me.fnameTxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.fnameTxtbox.DefaultText = ""
-        Me.fnameTxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.fnameTxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.fnameTxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.fnameTxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.fnameTxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.fnameTxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fnameTxtbox.ForeColor = System.Drawing.Color.Black
-        Me.fnameTxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.fnameTxtbox.Location = New System.Drawing.Point(27, 103)
-        Me.fnameTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.fnameTxtbox.Name = "fnameTxtbox"
-        Me.fnameTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.fnameTxtbox.PlaceholderText = ""
-        Me.fnameTxtbox.SelectedText = ""
-        Me.fnameTxtbox.Size = New System.Drawing.Size(271, 37)
-        Me.fnameTxtbox.TabIndex = 79
+        Me.contacttxtbox.BorderColor = System.Drawing.Color.Black
+        Me.contacttxtbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.contacttxtbox.DefaultText = ""
+        Me.contacttxtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.contacttxtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.contacttxtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.contacttxtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.contacttxtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.contacttxtbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contacttxtbox.ForeColor = System.Drawing.Color.Black
+        Me.contacttxtbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.contacttxtbox.Location = New System.Drawing.Point(36, 127)
+        Me.contacttxtbox.Margin = New System.Windows.Forms.Padding(5)
+        Me.contacttxtbox.Name = "contacttxtbox"
+        Me.contacttxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.contacttxtbox.PlaceholderText = ""
+        Me.contacttxtbox.SelectedText = ""
+        Me.contacttxtbox.Size = New System.Drawing.Size(361, 46)
+        Me.contacttxtbox.TabIndex = 79
         '
         'Adminregform
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(806, 623)
+        Me.ClientSize = New System.Drawing.Size(1075, 767)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Adminrefform)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Adminregform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Adminregform"
@@ -609,29 +634,29 @@ Partial Class Adminregform
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents suffixtxtbox As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents mnametxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents addressTxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents genderCombobox As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents birthdaytime As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Txtboxlname As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Birthdaytimepicker As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents lnametxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Txtboxfname As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents fnametxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents passwordTxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents UsernameTxtbox As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents lnameTxtbox As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents emailtxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents fnameTxtbox As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents contacttxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents cancelBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents addBtn As Guna.UI2.WinForms.Guna2Button
 End Class

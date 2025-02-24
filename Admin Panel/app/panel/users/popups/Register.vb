@@ -1,5 +1,5 @@
 ﻿Public Class Register
-
+    Private _selectedImage As Image = Nothing
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         Me.Close()
     End Sub
@@ -13,9 +13,10 @@
         Guna2TabControl1.SelectedTab = TabPage1
     End Sub
 
-    Private Sub nextBtn_Click(sender As Object, e As EventArgs) Handles nextBtn.Click
+    Private Async Sub nextBtn_Click(sender As Object, e As EventArgs) Handles nextBtn.Click
         OverlayHelper.ShowOverlay(Me)
 
+        ' Gather form data
         Dim fname As String = fnameTxtbox.Text.Trim()
         Dim mname As String = mnameTxtbox.Text.Trim()
         Dim lname As String = lnameTxtbox.Text.Trim()
@@ -23,68 +24,84 @@
         Dim contact As String = contactTxtbox.Text.Trim()
         Dim email As String = emailTxtBox.Text.Trim()
         Dim gender As String = genderCombobox.Text.Trim()
-        Dim birthday As Date = Birthdaytimepicker.Value ' Get DateTime value
+        Dim birthday As Date = Birthdaytimepicker.Value
 
-        Dim errorMsg As String = ""
+        ' If you store the photo in a PictureBox, do this:
+        Dim photo As Image = PictureBox.Image
 
-        ' Collect validation errors
-        If String.IsNullOrWhiteSpace(fname) Then
-            errorMsg &= "⦿ First Name is required." & vbCrLf
-        End If
+        ' Alternatively, if you use a class-level variable like `_selectedImage`:
+        ' Dim photo As Image = _selectedImage
 
-        If String.IsNullOrWhiteSpace(mname) Then
-            errorMsg &= "⦿ Middle Name is required." & vbCrLf
-        End If
+        ' Collect validation errors in a list
+        Dim errors As New List(Of String)
 
-        If String.IsNullOrWhiteSpace(lname) Then
-            errorMsg &= "⦿ Last Name is required." & vbCrLf
-        End If
+        ' 1. Name fields
+        If String.IsNullOrWhiteSpace(fname) Then errors.Add("⦿ First Name is required.")
+        If String.IsNullOrWhiteSpace(mname) Then errors.Add("⦿ Middle Name is required.")
+        If String.IsNullOrWhiteSpace(lname) Then errors.Add("⦿ Last Name is required.")
 
-        If String.IsNullOrWhiteSpace(address) Then
-            errorMsg &= "⦿ Address is required." & vbCrLf
-        End If
+        ' 2. Address
+        If String.IsNullOrWhiteSpace(address) Then errors.Add("⦿ Address is required.")
 
+        ' 3. Contact
         If String.IsNullOrWhiteSpace(contact) Then
-            errorMsg &= "⦿ Contact Number is required." & vbCrLf
-        ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(contact, "^\d{10,}$") Then
-            errorMsg &= "⦿ Contact Number must contain only numbers and be at least 10 digits." & vbCrLf
+            errors.Add("⦿ Contact Number is required.")
+        ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(contact, "^09\d{9}$") Then
+            errors.Add("⦿ Contact Number should be 11 Digits and must start with '09'")
         End If
 
+        ' 4. Email
         If String.IsNullOrWhiteSpace(email) Then
-            errorMsg &= "⦿ Email Address is required." & vbCrLf
+            errors.Add("⦿ Email Address is required.")
         ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(email, "^[^@\s]+@[^@\s]+\.[^@\s]+$") Then
-            errorMsg &= "⦿ Please enter a valid email address." & vbCrLf
+            errors.Add("⦿ Please enter a valid email address.")
+        ElseIf Await ManageUsersService.CheckEmailIfExisting(email, " ") Then
+            errors.Add("⦿ The Email is already in use.")
         End If
 
-        ' Gender Validation (Ensure a selection is made)
+        ' 5. Gender
         If genderCombobox.SelectedIndex = -1 Then
-            errorMsg &= "⦿ Please select a gender." & vbCrLf
+            errors.Add("⦿ Please select a gender.")
         End If
 
-        ' Birthday Validation (Ensure it's not a future date)
+        ' 6. Birthday
         If birthday > Date.Today Then
-            errorMsg &= "⦿ Birthday cannot be a future date." & vbCrLf
+            errors.Add("⦿ Birthday cannot be a future date.")
         End If
 
-        ' Show all errors at once if there are any
-        If errorMsg <> "" Then
-            Dim msgDialog As New Guna.UI2.WinForms.Guna2MessageDialog With {
-            .Parent = Me, ' Ensures it is centered on the form
-            .Style = Guna.UI2.WinForms.MessageDialogStyle.Light, ' Use Light or Dark
-            .Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning,
-            .Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK,
-            .Caption = "Validation Failed",
-            .Text = "Please fix the following errors:" & vbCrLf & vbCrLf & errorMsg
-        }
+        ' 7. Photo
+        If photo Is Nothing Then
+            errors.Add("⦿ Please select a photo.")
+        End If
 
+        ' Check if any errors were collected
+        If errors.Any() Then
+            OverlayHelper.HideOverlay()
+
+            ' Build your full error message
+            Dim fullMessage As String = "Please fix the following errors:" & vbCrLf & vbCrLf &
+                                String.Join(vbCrLf, errors)
+
+            ' Display with Guna2MessageDialog
+            Dim msgDialog As New Guna.UI2.WinForms.Guna2MessageDialog With {
+                .Parent = Me,
+                .Style = Guna.UI2.WinForms.MessageDialogStyle.Light,
+                .Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning,
+                .Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK,
+                .Caption = "Validation Failed",
+                .Text = fullMessage
+            }
             msgDialog.Show()
+
             Exit Sub
         End If
 
-        ' If everything is valid, proceed to the next tab
+        ' If we reach here, no errors - proceed
         OverlayHelper.HideOverlay()
-        'changepassword.Visible = True ' Make the change password panel visible
-        'verification.Visible = False ' Optionally hide the current panel if necessary
+        ' e.g., switch panel or do next steps:
+        ' changepassword.Visible = True
+        ' verification.Visible = False
+
     End Sub
 
     Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
@@ -112,5 +129,39 @@
 
     Private Sub emailTxtBox_TextChanged(sender As Object, e As EventArgs) Handles emailTxtBox.TextChanged
 
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        ' 1) Create the OpenFileDialog
+        Using ofd As New OpenFileDialog()
+            ' 2) Filter for image types
+            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp|All Files|*.*"
+            ofd.FilterIndex = 1
+            ofd.Title = "Select an Image to Upload"
+
+            ' 3) Show the dialog
+            If ofd.ShowDialog() = DialogResult.OK Then
+                Try
+                    ' 4) You now have a file path to the image
+                    Dim filePath As String = ofd.FileName
+                    _selectedImage = Image.FromFile(filePath)
+
+                    ' 2) Display the image in our PictureBox for preview
+                    PictureBox.SizeMode = PictureBoxSizeMode.Zoom
+                    PictureBox.Image = _selectedImage
+
+                    ' 5) Optionally, show a loading overlay or progress indicator
+
+                    ' 6) Call your upload function
+                    ' Await UploadImageToSupabaseAsync(filePath)
+
+                    MessageBox.Show("Upload successful!", "Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Catch ex As Exception
+                    MessageBox.Show($"Error uploading image: {ex.Message}", "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+            End If
+        End Using
     End Sub
 End Class
