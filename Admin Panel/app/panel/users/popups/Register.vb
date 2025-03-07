@@ -1,5 +1,15 @@
 ﻿Public Class Register
     Private _selectedImage As Image = Nothing
+    Private BioID As Int16
+
+
+    Public Class StateDTO
+        Public Property Id As Int16
+        Public Property CurrentState As String
+        Public Property BiometricsId As Int16?
+        Public Property LastUpdate As DateTime
+    End Class
+
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         Me.Close()
     End Sub
@@ -98,25 +108,10 @@
 
         ' If we reach here, no errors - proceed
         OverlayHelper.HideOverlay()
+        Guna2TabControl1.SelectedTab = TabPage2
         ' e.g., switch panel or do next steps:
         ' changepassword.Visible = True
         ' verification.Visible = False
-
-    End Sub
-
-    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
-
-    End Sub
-
-    Private Sub Guna2DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles Birthdaytimepicker.ValueChanged
-
-    End Sub
-
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
-
-    End Sub
-
-    Private Sub TxtboxPassword_TextChanged(sender As Object, e As EventArgs) Handles TxtboxPassword.TextChanged
 
     End Sub
 
@@ -163,5 +158,31 @@
                 End Try
             End If
         End Using
+    End Sub
+
+    Private Sub scanBtn_Click(sender As Object, e As EventArgs) Handles scanBtn.Click
+        Timer1.Start()
+        OverlayHelper.ShowOverlay(Me)
+
+    End Sub
+
+    Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Timer1.Interval = 1000
+    End Sub
+
+    Private Async Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        ' This event fires every time the Timer 'ticks' (i.e. every Interval)
+        Dim result = Await ManageUsersService.GetSystemStateAsync()
+
+        If Not result.BiometricsId.HasValue OrElse result.BiometricsId.Value = 0 Then
+            Debug.Print("Condition not met. Polling continues...")
+        Else
+            BioID = result.BiometricsId.Value
+            OverlayHelper.HideOverlay()
+            scanBtn.Enabled = False
+            Timer1.Stop()
+        End If
     End Sub
 End Class

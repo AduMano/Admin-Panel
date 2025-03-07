@@ -71,7 +71,7 @@ Public Class Adminregform
             errors.Add("⦿ Email Address is required.")
         ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(email, "^[^@\s]+@[^@\s]+\.[^@\s]+$") Then
             errors.Add("⦿ Please enter a valid email address.")
-        ElseIf Await ManageUsersService.CheckEmailIfExisting(email, email) Then
+        ElseIf Await ManageUsersService.CheckEmailIfExisting(email, If(FORM_DATA Is Nothing, " ", FORM_DATA.Email)) Then
             errors.Add("⦿ The Email is already in use.")
         End If
 
@@ -88,7 +88,7 @@ Public Class Adminregform
         ' 7. Username
         If String.IsNullOrWhiteSpace(username) Then
             errors.Add("⦿ Username is required.")
-        ElseIf Await ManageUsersService.CheckUsernameIfExisting(username, " ") Then
+        ElseIf Await ManageUsersService.CheckUsernameIfExisting(username, If(FORM_DATA Is Nothing, " ", FORM_DATA.Username)) Then
             errors.Add("⦿ The Username is already in use.")
         End If
 
@@ -152,6 +152,8 @@ Public Class Adminregform
                 .Text = "Successfully Added new Admin!"
             }
                 msgDialog.Show()
+                Me.Close()
+                PARENT.Reload_Data()
                 Exit Function
             Else
                 Dim msgDialog As New Guna.UI2.WinForms.Guna2MessageDialog With {

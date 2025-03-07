@@ -514,7 +514,25 @@ Public Class ManageUsers
                 ' Check if the user clicked inside the "View" button
                 If viewRect.Contains(clickPoint) Then
                     ' TODO: Your "View" logic (open details form, etc.)
-                    MessageBox.Show($"View clicked on row {e.RowIndex}.")
+                    Dim userData As RegisterUserDto = New RegisterUserDto With {
+                        .UserId = _allResidents(e.RowIndex).userId,
+                        .FirstName = _allResidents(e.RowIndex).firstName,
+                        .MiddleName = _allResidents(e.RowIndex).middleName,
+                        .LastName = _allResidents(e.RowIndex).lastName,
+                        .Suffix = _allResidents(e.RowIndex).suffix,
+                        .BirthDate = _allResidents(e.RowIndex).birthdate,
+                        .Gender = _allResidents(e.RowIndex).genderID,
+                        .Address = _allResidents(e.RowIndex).address,
+                        .Email = _allResidents(e.RowIndex).email,
+                        .ContactNumber = _allResidents(e.RowIndex).contactNumber,
+                        .Username = _allResidents(e.RowIndex).username,
+                        .Password = "",
+                        .Role = _allResidents(e.RowIndex).roleID,
+                        .OperatorID = parent.userID,
+                        .UserType = "Users"
+                        }
+                    Dim updateForm As Adminregform = New Adminregform(Me, "VIEW", True, userData)
+                    updateForm.Show()
 
                     ' Check if the user clicked inside the "Update" button
                 ElseIf updateRect.Contains(clickPoint) Then

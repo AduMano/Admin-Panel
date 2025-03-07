@@ -55,6 +55,13 @@ Public Class ManageUsersService
         Public Property roleID As String
 
     End Class
+
+    Public Class StateDTO
+        Public Property Id As Int16
+        Public Property CurrentState As String
+        Public Property BiometricsId As Int16?
+        Public Property LastUpdate As DateTime
+    End Class
     Public Shared Async Function GetAllAdminList() As Task(Of List(Of UserDetailsDto))
         Try
             Dim apiUrl As String = Await ApiHelper.GetLatestApiUrl()
@@ -200,7 +207,7 @@ Public Class ManageUsersService
             Dim content As New StringContent(jsonPayload, Encoding.UTF8, "application/json")
 
             ' Post the JSON payload to the API.
-            Dim response As HttpResponseMessage = Await client.PostAsync(apiUrl, content)
+            Dim response As HttpResponseMessage = Await client.PostAsync(requestUrlUsers, content)
 
             If response.IsSuccessStatusCode Then
                 ' Success: The user was created.
@@ -247,5 +254,70 @@ Public Class ManageUsersService
             End If
         End Using
     End Function
+
+    Public Shared Async Function ToggleMode(updateMode As String) As Task(Of Boolean)
+        ' 1) Get the base API URL
+        Dim apiUrl As String = Await ApiHelper.GetLatestApiUrl()
+        Dim requestUrlUsers As String = $"{apiUrl}/api/System/state"
+
+        ' 2) Create an HttpClient
+        Using client As New HttpClient()
+            ' Accept JSON
+            client.DefaultRequestHeaders.Accept.Clear()
+            client.DefaultRequestHeaders.Accept.Add(New MediaTypeWithQualityHeaderValue("application/json"))
+
+            ' 3) Serialize the DTO to JSON
+            Dim jsonPayload As String = JsonConvert.SerializeObject(updateMode)
+            Dim content As New StringContent(jsonPayload, Encoding.UTF8, "application/json")
+
+            ' 4) Send PUT request
+            Dim response As HttpResponseMessage = Await client.PutAsync(requestUrlUsers, content)
+            Dim responseContent As String = Await response.Content.ReadAsStringAsync()
+
+            ' 5) Try to parse response as boolean
+            Dim result As Boolean = False
+            Boolean.TryParse(responseContent, result)
+
+            If result Then
+                ' 'true' indicates success
+                Return True
+            Else
+                ' 'false' or any other content indicates failure
+                Return False
+            End If
+        End Using
+    End Function
+
+    Public Shared Async Function GetSystemStateAsync() As Task(Of StateDTO)
+        ' 1) Get the base API URL
+        Dim apiUrl As String = Await ApiHelper.GetLatestApiUrl()
+        Dim requestUrl As String = $"{apiUrl}/api/System/state"
+
+        Using client As New HttpClient()
+            ' Accept JSON
+            client.DefaultRequestHeaders.Accept.Clear()
+            client.DefaultRequestHeaders.Accept.Add(New MediaTypeWithQualityHeaderValue("application/json"))
+
+            ' 2) Send the GET request
+            Dim response As HttpResponseMessage = Await client.GetAsync(requestUrl)
+            Dim responseContent As String = Await response.Content.ReadAsStringAsync()
+
+            If response.IsSuccessStatusCode Then
+                ' 3) If the request succeeded, return the JSON (or plain text) response
+                Dim result As StateDTO = JsonConvert.DeserializeObject(Of StateDTO)(responseContent)
+                Dim resultStr As String = JsonConvert.SerializeObject(result)
+                Console.WriteLine("Received StateDTO: " & resultStr)
+                Return result
+            Else
+                ' 4) If it failed, optionally log or handle errors
+                '    For now, just return the raw response or empty string
+                Dim result As StateDTO = JsonConvert.DeserializeObject(Of StateDTO)(responseContent)
+                Dim resultStr As String = JsonConvert.SerializeObject(result)
+                Console.WriteLine("Received StateDTO: " & resultStr)
+                Return result
+            End If
+        End Using
+    End Function
+
 
 End Class
